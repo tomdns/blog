@@ -4,9 +4,8 @@ title: Sliced Mountains
 description: Tutorials
 ---
 
-### Sliced Mountains
-## Stuff
-# Staff
+### Houdini Tutorial
+## Sliced Mountains
 
 ![Header](../images/mountain.png)
 
