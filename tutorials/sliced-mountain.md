@@ -6,6 +6,6 @@ description: Tutorials
 
 ## Sliced Mountains
 
-Hey
+![Header](../images/mountain.png)
 
 [back](../)
