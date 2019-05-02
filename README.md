@@ -1,11 +1,11 @@
-### Header 3
+---
+layout: default
+title: Another page
+description: This is just another page
+---
 
-```javascript
-var s = "JavaScript syntax highlighting";
-alert(s);
-```
- 
-```python
-s = "Python syntax highlighting"
-print s
-```
+## Welcome to another page
+
+_yay_
+
+[back](./)
