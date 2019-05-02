@@ -8,4 +8,4 @@ description: Tutorials
 
 Hey
 
-[back](./)
+[back](../)
