@@ -6,7 +6,7 @@ description: Tutorials
 
 ![Header](../images/mountain.png)
 
-#### Houdini Tutorial
+Houdini Tutorial
 ## Sliced Mountains
 
 [back](../)
