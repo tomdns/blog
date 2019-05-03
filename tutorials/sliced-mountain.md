@@ -12,7 +12,7 @@ Houdini Tutorial
 
 > Learn how to quickly generate Godus-like islands using Houdini's heightfields.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempor tortor semper elit efficitur, sit amet aliquet neque fermentum.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempor tortor semper elit efficitur, sit amet aliquet neque fermentum [Link](./).
 
 ### Header 3
 
