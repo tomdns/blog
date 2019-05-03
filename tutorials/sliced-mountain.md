@@ -14,6 +14,8 @@ Houdini Tutorial
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempor tortor semper elit efficitur, sit amet aliquet neque fermentum [Link](./).
 
+* * *
+
 ### Header 3
 
 Vestibulum aliquet leo eget purus tempor faucibus. Cras quis nisi leo. Suspendisse scelerisque mi vitae luctus suscipit. Sed facilisis sem a porta dictum.
