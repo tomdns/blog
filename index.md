@@ -1,1 +1,1 @@
-[1](./tutorials/sliced-mountain.md)
+[1](./tutorials/)
