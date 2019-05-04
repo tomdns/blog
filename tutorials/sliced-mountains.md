@@ -8,7 +8,7 @@ description: Tutorials
 
 # Houdini Tutorial - Sliced Mountains
 
-> Learn how to quickly generate Godus-like islands using Houdini's heightfields.
+> Learn quickly how to generate Godus-like islands using heightfields in Houdini.
 
 * * *
 
