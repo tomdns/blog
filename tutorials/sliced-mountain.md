@@ -14,7 +14,7 @@ Houdini Tutorial
 
 * * *
 
-### 0 - Intro
+### Intro
 
 Ludum Dare 44 is now over. It's been fun! Since quite a few people asked for it, here's a little breakdown of the islands in our game Seaway. You can see it in action [here](https://borderline.itch.io/seaway).
 
