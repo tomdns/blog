@@ -6,9 +6,7 @@ description: Tutorials
 
 ![Header](../images/sliced-mountains/mountain.png)
 
-Houdini Tutorial
-
-# Sliced Mountains
+# Sliced Mountains using Houdini
 
 > Learn how to quickly generate Godus-like islands using Houdini's heightfields.
 
