@@ -74,4 +74,14 @@ The **Divide** SOP is used to clean up the geometry. Untick *Convex Polygons* an
 
 Then you can simply do a **PolyExtrude** and only output the sides, subdivide it, and put the caps back with a **PolyFill**.
 
+Finally you can add a color node set to *Ramp from Attribute* or *Random from Attribute* and use the *height* to drive it.
+
+That's it!
+
+![](../images/mountain_final.png)
+
+### 3 - Conclusion
+
+You can download the source [**here**](../sources/sliced_mountain.hiplc)
+
 [back](../)
