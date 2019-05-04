@@ -8,7 +8,7 @@ description: Tutorials
 
 # Houdini Tutorial - Sliced Mountains
 
-> Learn how to generate Godus-like islands using heightfields in Houdini.
+> Learn how to generate Godus-inspired islands using heightfields in Houdini.
 
 * * *
 
@@ -78,8 +78,12 @@ That's it!
 
 ![](../images/sliced-mountains/mountain_final.png)
 
-## 3 - Conclusion
+## 3 - Further Improvements
 
-You can download the source [**here**](../sources/sliced_mountain.hiplc)
+This small tutorial only covered the generation of the base mesh. The heightfield SOPS can generate a lot of interesting data you could use for example to scatter props in coherent ways.
+
+## 4 - Sources
+
+You can download the project file [**here**](../sources/sliced_mountain.hiplc)
 
 [back](../)
