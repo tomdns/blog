@@ -12,37 +12,74 @@ Houdini Tutorial
 
 > Learn how to quickly generate Godus-like islands using Houdini's heightfields.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempor tortor semper elit efficitur, sit amet aliquet neque fermentum [Link](./).
+Ludum Dare 44 is now over. It's been fun! Since quite a few people asked for it, here's a little breakdown of the islands in our game Seaway. You can see it in action [here](https://borderline.itch.io/seaway).
 
 * * *
 
-### 1 - Header 3
+### 0 - Concept
 
-Vestibulum aliquet leo eget purus tempor faucibus. Cras quis nisi leo. Suspendisse scelerisque mi vitae luctus suscipit. Sed facilisis sem a porta dictum.
+We wanted to recreate islands similar to the ones we find in *Godus*, in a more simplied version.
 
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
+Here's how it works:
+- generate a heightfield
+- convert it to points
+- loop through all the points according to their height
+- reconstruct the slices from each layer of points
+
+### 1 - Heightfield
+
+The island height generation is quite basic. I only used one *HeightField Noise* SOP and played with the parameters till I was happy with the results. Just make sure to set *Combine Method* to *Maximum* so that we only get values above 0.
+
+Here's what I came up with:
+
+![](../images/mountain_height.png)
+
+To get points from all of this we first need to convert the heightfield to polygons, using the *HeightField Convert*. Then we can use the *Points from Volume*, and set the *Point Separation* to 2. This value will describe later on the height of each slice. Clip the points below 1 in height because we don't need the points from the ground.
+
+Here's the network so far:
+
+![](../images/mountain_network.png)
+
+Clipping the ground usually messes up our object position, you can reset it easily with some vex.
+Append a *Point Wrangle* and add the following code:
+
+```c#
+@P -= getbbox_center(0);
+@P.y += getbbox_size(0).y * .5;
 ```
 
-In hac habitasse platea dictumst. Aenean fringilla viverra lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam cursus porta mi. Maecenas pharetra ipsum non mauris rutrum rutrum. Donec nec sollicitudin neque, nec iaculis leo. Etiam sapien orci, convallis sed faucibus ac, gravida ac risus. Praesent purus mi, convallis eget erat at, fringilla scelerisque odio.
+At the same time we can also add a point attribute from the points height, so we can use it later in our loop to gather all the points by 'slice'.
+
+```c#
+i@height = rint(@P.y);
+```
+
+### 2 - Reconstructing the slices
+
+Now that each point has an attribute called *height* representing its layer, we can easily loop through them. Plug in a *For-Each Named Primitive* and set *Piece Elements* to *Points*, and *Piece Attribute* to our point attribute name *height*. You should be able to see each layer individually by ticking Single Pass.
+
+![](../images/mountain_loop.gif)
+
+We can now reconstruct the slices independently. Here's how it works:
+
+![](../images/mountain_loop_network.png)
+
+First, a *Connect Adjacent Pieces* set to *Adjacent Points* go through all the points and creates connexions with all the points within a certain radius. Here I set the search radius to something like 4, it depends of what shape you want to achieve.
+
+Then a *Triangulate 2D* creates a mesh from the generated connexions. You can set the *2D Positions* to *Select Projection Plane* and leave the default settings. It makes sure every layer is remeshed in the same direction. This resets our layer's position though so we need to put it back to its original height. You can put a point wrangle with the following:
+
+```c#
+@P.y = i@height;
+```
+
+The *Divide* SOP is used to clean up the geometry. Untick *Convex Polygons* and tick *Remove Shared Edges*. Follow that with a *Facet* to remove the inline points.
+
+Then you can simply do a *PolyExtrude* and only output the sides, subdivide it, and put the caps back with a *PolyFill*.
 
 > Maecenas rutrum sagittis ipsum vitae sodales ?
 
 Aliquam quis sem sit amet mi aliquam fermentum. Donec nec arcu neque. Suspendisse posuere lobortis turpis, lobortis posuere enim elementum id. Nulla eu nisl magna.
 
-### 2 - Header 3
-
-Sed viverra diam ac dui posuere placerat. Fusce eget sollicitudin urna. Fusce dapibus laoreet quam, mollis varius enim malesuada ac. Nam lacinia quis velit ut ornare.
-
-```c#
-// Some vex
-@P.y = i@height;
-float i = 0;
-i += float(1);
-```
+### 3 - 
 
 [back](../)
