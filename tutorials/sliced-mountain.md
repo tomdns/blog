@@ -12,43 +12,41 @@ Houdini Tutorial
 
 > Learn how to quickly generate Godus-like islands using Houdini's heightfields.
 
-Ludum Dare 44 is now over. It's been fun! Since quite a few people asked for it, here's a little breakdown of the islands in our game Seaway. You can see it in action [here](https://borderline.itch.io/seaway).
-
 * * *
 
-### 0 - Concept
+### 0 - Intro
+
+Ludum Dare 44 is now over. It's been fun! Since quite a few people asked for it, here's a little breakdown of the islands in our game Seaway. You can see it in action [here](https://borderline.itch.io/seaway).
 
 We wanted to recreate islands similar to the ones we find in *Godus*, in a more simplied version.
 
 Here's how it works:
-- generate a heightfield
-- convert it to points
-- loop through all the points according to their height
-- reconstruct the slices from each layer of points
+- Generate a heightfield
+- Convert it to points
+- Loop through all the points according to their height
+- Reconstruct the slices from each layer of points
 
 ### 1 - Heightfield
 
-The island height generation is quite basic. I only used one *HeightField Noise* SOP and played with the parameters till I was happy with the results. Just make sure to set *Combine Method* to *Maximum* so that we only get values above 0.
+The island height generation is quite basic. I only used one **HeightField Noise** SOP and played with the parameters till I was happy with the results. Just make sure to set *Combine Method* to *Maximum* so that we only get values above 0.
 
 Here's what I came up with:
 
 ![](../images/mountain_height.png)
 
-To get points from all of this we first need to convert the heightfield to polygons, using the *HeightField Convert*. Then we can use the *Points from Volume*, and set the *Point Separation* to 2. This value will describe later on the height of each slice. Clip the points below 1 in height because we don't need the points from the ground.
-
-Here's the network so far:
+To get points from all of this we first need to convert the heightfield to polygons, using **HeightField Convert**. Then we can use a **Points from Volume**, and set the *Point Separation* to 2. This value will describe later on the height of each slice. Clip the points below 1 in height because we don't need the points from the ground.
 
 ![](../images/mountain_network.png)
 
 Clipping the ground usually messes up our object position, you can reset it easily with some vex.
-Append a *Point Wrangle* and add the following code:
+Append a **Point Wrangle** and add the following code:
 
 ```c#
 @P -= getbbox_center(0);
 @P.y += getbbox_size(0).y * .5;
 ```
 
-At the same time we can also add a point attribute from the points height, so we can use it later in our loop to gather all the points by 'slice'.
+At the same time we can also add a point attribute from the points height, so we can use it later in our loop to gather all the points by slice.
 
 ```c#
 i@height = rint(@P.y);
@@ -56,7 +54,7 @@ i@height = rint(@P.y);
 
 ### 2 - Reconstructing the slices
 
-Now that each point has an attribute called *height* representing its layer, we can easily loop through them. Plug in a *For-Each Named Primitive* and set *Piece Elements* to *Points*, and *Piece Attribute* to our point attribute name *height*. You should be able to see each layer individually by ticking Single Pass.
+Now that each point has an attribute called **height** representing its layer, we can easily loop through them. Plug in a **For-Each Named Primitive** and set *Piece Elements* to *Points*, and *Piece Attribute* to our point attribute name **height**. You should be able to see each layer individually by ticking Single Pass.
 
 ![](../images/mountain_loop.gif)
 
@@ -64,17 +62,17 @@ We can now reconstruct the slices independently. Here's how it works:
 
 ![](../images/mountain_loop_network.png)
 
-First, a *Connect Adjacent Pieces* set to *Adjacent Points* go through all the points and creates connexions with all the points within a certain radius. Here I set the search radius to something like 4, it depends of what shape you want to achieve.
+First, a **Connect Adjacent Pieces** set to *Adjacent Points* go through all the points and creates connexions with all the points within a certain radius. Here I set the search radius to something like 4, it depends of what shape you want to achieve.
 
-Then a *Triangulate 2D* creates a mesh from the generated connexions. You can set the *2D Positions* to *Select Projection Plane* and leave the default settings. It makes sure every layer is remeshed in the same direction. This resets our layer's position though so we need to put it back to its original height. You can put a point wrangle with the following:
+Then a **Triangulate 2D** creates a mesh from the generated connexions. You can set the *2D Positions* to *Select Projection Plane* and leave the default settings. It makes sure every layer is remeshed in the same direction. This resets our layer's position though so we need to put it back to its original height. You can put a point wrangle with the following:
 
 ```c#
 @P.y = i@height;
 ```
 
-The *Divide* SOP is used to clean up the geometry. Untick *Convex Polygons* and tick *Remove Shared Edges*. Follow that with a *Facet* to remove the inline points.
+The **Divide** SOP is used to clean up the geometry. Untick *Convex Polygons* and tick *Remove Shared Edges*. Follow that with a **Facet** to remove the inline points.
 
-Then you can simply do a *PolyExtrude* and only output the sides, subdivide it, and put the caps back with a *PolyFill*.
+Then you can simply do a **PolyExtrude** and only output the sides, subdivide it, and put the caps back with a **PolyFill**.
 
 > Maecenas rutrum sagittis ipsum vitae sodales ?
 
