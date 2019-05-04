@@ -36,6 +36,7 @@ Here's what I came up with:
 
 To get points from all of this we first need to convert the heightfield to polygons, using **HeightField Convert**. Then we can use a **Points from Volume**, and set the *Point Separation* to 2. This value will describe later on the height of each slice. Clip the points below 1 or more to remove every points from the ground and only keep separated bits of the heightfield.
 
+![](../images/mountain_clip.png)
 ![](../images/mountain_network.png)
 
 Clipping the ground usually messes up our object position, you can reset it easily with some vex.
