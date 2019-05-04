@@ -63,7 +63,7 @@ We can now reconstruct the slices independently. Here's how it works:
 
 ![](../images/mountain_loop_network.png)
 
-First, a **Connect Adjacent Pieces** set to *Adjacent Points* go through all the points and creates connexions with all the points within a certain radius. Here I set the search radius to something like 4, it depends of what shape you want to have.
+First, a **Connect Adjacent Pieces** set to *Adjacent Points* go through all the points and creates connexions with all their neighbours within a certain radius. Here I set the search radius to something like 4, it depends of what shape you want to have.
 
 Then a **Triangulate 2D** creates a mesh from the generated connexions. You can set the *2D Positions* to *Select Projection Plane* and leave the default settings. It makes sure every layer is remeshed in the same direction. This resets our layer's position though so we need to put it back to its original height. Simply get the current point *height* attribute and assign it to the current point Y position.
 
