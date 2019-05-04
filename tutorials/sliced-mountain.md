@@ -39,7 +39,7 @@ To get points from all of this we first need to convert the heightfield to polyg
 ![](../images/mountain_clip.png)
 ![](../images/mountain_network.png)
 
-Clipping the ground usually messes up our object position, you can reset it easily with some vex.
+Clipping the ground usually messes up our object position, we can reset it easily with some vex.
 Append a **Point Wrangle** and add the following code:
 
 ```c#
@@ -63,7 +63,7 @@ We can now reconstruct the slices independently. Here's how it works:
 
 ![](../images/mountain_loop_network.png)
 
-First, a **Connect Adjacent Pieces** set to *Adjacent Points* go through all the points and creates connexions with all the points within a certain radius. Here I set the search radius to something like 4, it depends of what shape you want to achieve.
+First, a **Connect Adjacent Pieces** set to *Adjacent Points* go through all the points and creates connexions with all the points within a certain radius. Here I set the search radius to something like 4, it depends of what shape you want to have.
 
 Then a **Triangulate 2D** creates a mesh from the generated connexions. You can set the *2D Positions* to *Select Projection Plane* and leave the default settings. It makes sure every layer is remeshed in the same direction. This resets our layer's position though so we need to put it back to its original height. Simply get the current point *height* attribute and assign it to the current point Y position.
 
@@ -74,11 +74,5 @@ Then a **Triangulate 2D** creates a mesh from the generated connexions. You can 
 The **Divide** SOP is used to clean up the geometry. Untick *Convex Polygons* and tick *Remove Shared Edges* so that we're left with only one primitive from the triangulated mess. Follow that with a **Facet** to remove the inline points.
 
 Then you can simply do a **PolyExtrude** and only output the sides, subdivide it, and put the caps back with a **PolyFill**.
-
-> Maecenas rutrum sagittis ipsum vitae sodales ?
-
-Aliquam quis sem sit amet mi aliquam fermentum. Donec nec arcu neque. Suspendisse posuere lobortis turpis, lobortis posuere enim elementum id. Nulla eu nisl magna.
-
-### 3 - 
 
 [back](../)
