@@ -82,8 +82,12 @@ That's it!
 
 This small tutorial only covered the generation of the base mesh. The heightfield SOPS can generate a lot of interesting data you could use for example to scatter props in coherent ways.
 
-## 4 - Sources
+Also there's probably a better way to smooth the slices than using the Subdivide SOP, I tried several methods but none of them worked really the way I wanted to.
+
+## 4 - Conclusion
 
 You can download the project file [**here**](../sources/sliced_mountain.hiplc)
+
+Don't forget to follow us on twitter [@borderline_vg](https://twitter.com/borderline_vg) for further updates and tutorials, and don't hesitate if you have any question you can also message me directly [@tomdns_](https://twitter.com/tomdns_).
 
 [back](../)
