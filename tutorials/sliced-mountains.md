@@ -4,7 +4,7 @@ title: Sliced Mountains
 description: Tutorials
 ---
 
-![Header](../images/mountain.png)
+![Header](../images/sliced-mountains/mountain.png)
 
 Houdini Tutorial
 
@@ -14,7 +14,7 @@ Houdini Tutorial
 
 * * *
 
-### Intro
+## Intro
 
 Ludum Dare 44 is now over. It's been fun! Since quite a few people asked for it, here's a little breakdown of the islands in our game Seaway. You can see it in action [here](https://borderline.itch.io/seaway).
 
@@ -26,17 +26,17 @@ Here's how it works:
 - Loop through all the points according to their height
 - Reconstruct the slices from each layer of points
 
-### 1 - Heightfield
+## 1 - Heightfield
 
 The island height generation is quite basic. I only used one **HeightField Noise** SOP and played with the parameters till I was happy with the results. Just make sure to set *Combine Method* to *Maximum* so that we only get values above 0.
 
 Here's what I came up with:
 
-![](../images/mountain_height.png)
+![](../images/sliced-mountains/mountain_height.png)
 
 To get points from all of this we first need to convert the heightfield to polygons, using **HeightField Convert**. Then we can use a **Points from Volume**, and set the *Point Separation* to 2. This value will describe later on the height of each slice. Clip the points below 1 or more to remove every points from the ground and only keep separated bits of the heightfield.
 
-![](../images/mountain_network.png)
+![](../images/sliced-mountains/mountain_network.png)
 
 Clipping the ground usually messes up our object position, we can reset it easily with some vex.
 Append a **Point Wrangle** and add the following code:
@@ -52,15 +52,15 @@ At the same time we can also add a point attribute from the points height, so we
 i@height = rint(@P.y);
 ```
 
-### 2 - Reconstructing the slices
+## 2 - Reconstructing the slices
 
 Now that each point has an attribute called **height** representing its layer, we can easily loop through them. Plug in a **For-Each Named Primitive** and set *Piece Elements* to *Points*, and *Piece Attribute* to our point attribute name **height**. You should be able to see each layer individually by ticking Single Pass.
 
-![](../images/mountain_loop.gif)
+![](../images/sliced-mountains/mountain_loop.gif)
 
 We can now reconstruct the slices independently. Here's how it works:
 
-![](../images/mountain_loop_network.png)
+![](../images/sliced-mountains/mountain_loop_network.png)
 
 First, a **Connect Adjacent Pieces** set to *Adjacent Points* go through all the points and creates connexions with all their neighbours within a certain radius. Here I set the search radius to something like 4, it depends of what shape you want to have.
 
@@ -78,9 +78,9 @@ Finally you can add a color node set to *Ramp from Attribute* or *Random from At
 
 That's it!
 
-![](../images/mountain_final.png)
+![](../images/sliced-mountains/mountain_final.png)
 
-### 3 - Conclusion
+## 3 - Conclusion
 
 You can download the source [**here**](../sources/sliced_mountain.hiplc)
 
