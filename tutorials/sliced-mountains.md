@@ -88,7 +88,9 @@ Also there's probably a better way to smooth the slices than using the Subdivide
 
 You can download the project file [**here**](../sources/sliced_mountain.hiplc)
 
-For further updates and tutorials, you can follow us on Twitter [@borderline_vg](https://twitter.com/borderline_vg).  
-Don't hesitate if you have any question you can also message me directly [@tomdns_](https://twitter.com/tomdns_).
+For further updates and tutorials, you can follow us on Twitter [@borderline_vg](https://twitter.com/borderline_vg)  
+Don't hesitate if you have any question you can also message me directly [@tomdns_](https://twitter.com/tomdns_)
+
+* * *
 
 [back](../)
