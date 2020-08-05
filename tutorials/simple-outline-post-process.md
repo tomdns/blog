@@ -8,13 +8,13 @@ description: Tutorials
 
 # Shader Breakdown - Simple Outline Post-Process
 
-> Specific purpose pixel-perfect outline for Desktop Garden, our #LD46 jam entry.
+> Specific pixel-perfect outline for Desktop Garden, our #LD46 jam entry
 
 * * *
 
 ## Intro
 
-New Ludum Dare, new breakdown! 46th edition, and we decided to make a weird game that's playable on your own desktop. See it in action [here](https://borderline.itch.io/desktop-garden). We wanted a cheap and easy way to add contrast to the whole thing since it could be played on either dark or light backgrounds and we had no control over that. We went for a post-process outline, let's see how it was made!
+New Ludum Dare, new breakdown! We decided to make a weird game that's playable on your own desktop. See it in action [here](https://borderline.itch.io/desktop-garden). We wanted an easy way to add contrast to the whole image and keep a good visibility no matter what the background is. We went for a post-process outline, let's see how it was made!
 
 ## 1 - Post Process
 
@@ -32,7 +32,7 @@ public class PostProcess : MonoBehaviour
 }
 ```
 
-Now everytime we render a frame, the _MainTex property of *material* will be updated with the content of the RenderTexture. Meaning that we now manipulate the texture however we want in the shader.
+Now everytime we render a frame, the _MainTex property of *material* will be updated with the content of the RenderTexture. Meaning that we can now manipulate the texture however we want in the shader.
 A simple shader that fetches the main texture would look like this:
 
 ```c++
@@ -84,7 +84,7 @@ Shader "PostProcess/Outline"
 
 ## 2 - Outline Shader
 
-The outline shader is quite simple. It works this way:
+The outline shader works this way:
 For each pixel on the screen, we look at the direct neighbours of this pixel (top bottom left right), and compare their colors against another one (the background color in our case). 
 Then from the number of neighbours that match the reference color we know if that pixel is part of the outline or not.
 
@@ -92,7 +92,7 @@ So for instance if my background is black, my current pixel is black, and every 
 
 ![Outline](../images/simple-outline-post-process/outline.png)
 
-It worked great in our game because the color of the background is always the same (it's the color we use to determine if the image should be cutout or not).
+It worked great in our game because the color of the background is always the same (it's the key color we use to determine if the image should be transparent, like a greenscreen).
 
 Let's see what it looks like in code!
 
@@ -114,7 +114,7 @@ fixed4 frag (v2f i) : SV_Target
 
 *_MainTex_TexelSize* gives us the size of a pixel on screen ( 1 / Screen size ), since our texture takes up the whole screen.
 
-Then we need to check if each color equals our background color, in this case I just take the distance between the two and check if its smaller than some value.
+Then we need to check if each color equals our background color, in this case I just take the distance between the two and check if its smaller than some value (simply taking the distance isn't the most accurate, but it worked great in this case).
 
 ```c++
     ...
