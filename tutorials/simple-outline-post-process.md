@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Sliced Mountains
+title: Simple Outline Post-Process
 description: Tutorials
 ---
 
