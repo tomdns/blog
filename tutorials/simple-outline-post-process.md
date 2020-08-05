@@ -96,7 +96,7 @@ It worked great in our game because the color of the background is always the sa
 
 Let's see what it looks like in code!
 
-First we have to sample all the neighbours
+First we have to sample all neighbours
 
 ```c++
 fixed4 frag (v2f i) : SV_Target
