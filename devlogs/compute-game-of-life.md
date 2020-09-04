@@ -10,12 +10,6 @@ description: Devnotes
 
 * * *
 
-## Note
-
-Devnotes are a way for me to keep track of what I do and remind me of the important bits :)
-
-## 1 - Core idea
-
 I send a render texture to the compute that will contain the results of the simulation, I never read from it.
 Then I send a RWStructuredBuffer of the size of my texture (width*height). So for each pixel I can have a struct of whatever data I need to send. For instance storing the previous/current state, a color, a lifetime, ... 
 
@@ -45,10 +39,6 @@ I kept the thread counts to [8,8,1] so I dispatch it this way
 ```c#
     compute.Dispatch(updateKernel, width/8, height/8, 1);
 ```
-
-## 3 - Conclusion
- 
-If you have any question you can message me directly [@tomdns_](https://twitter.com/tomdns_)
 
 * * *
 
