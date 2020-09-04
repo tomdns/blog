@@ -88,8 +88,6 @@ The outline shader works this way:
 For each pixel on the screen, we look at the direct neighbours of this pixel (top bottom left right), and compare their colors against another one (the background color in our case). 
 Then from the number of neighbours that match the reference color we know if that pixel is part of the outline or not.
 
-So for instance if my background is black, my current pixel is black, and every other pixel around the current one is black aswell, except one, it means that we're right next to a surface and that this pixel should become the color of the outline.
-
 ![Outline](../images/simple-outline-post-process/outline.png)
 
 It worked great in our game because the color of the background is always the same (it's the key color we use to determine if the image should be transparent, like a greenscreen).
@@ -114,7 +112,7 @@ fixed4 frag (v2f i) : SV_Target
 
 *_MainTex_TexelSize* gives us the size of a pixel on screen ( 1 / Screen size ), since our texture takes up the whole screen.
 
-Then we need to check if each color equals our background color, in this case I just take the distance between the two and check if its smaller than some value (simply taking the distance isn't the most accurate, but it worked great in this case).
+Then we need to check if each color equals our background color, in this case I just take the distance between the two and check if its smaller than some value (simply taking the distance isn't the most accurate, but it worked alright in this case).
 
 ```c++
     ...
@@ -141,8 +139,6 @@ And finally we check the number of neighbours that turn out to be background pix
 
     ...
 ```
-
-And that's it!
 
 ## 3 - Conclusion
  
