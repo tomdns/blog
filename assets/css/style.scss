@@ -36,6 +36,18 @@ img {
     margin: 5px;
 }
 
+.card_child_flex {
+    width: 50%;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card_date {
+    text-align: right;
+    margin-top: 5px;
+}
+
 .card_preview {
     width: 250px;
 }

@@ -2,9 +2,14 @@
     <div>
         <img src="images/compute-game-of-life/sandgame_unity.png" alt="image" class="card_preview" /> 
     </div>
-    <div class="card_child">
+    <div class="card_child_flex">
+        <div>
         <a href="articles/compute-game-of-life.html">Shader Project #3 - A Sand Game Running In A Compute Shader</a><br>
         A version of the classic game running on the GPU
+        </div>
+        <div class="card_date">
+        August 2020
+        </div>
     </div>
 </div>
 
