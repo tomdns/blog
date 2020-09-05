@@ -10,9 +10,9 @@ description: Project
 
 Recently I made a Uber shader specially for VFX, I made a few tests to try it out.
 
-![Projectiles](../images/sketch-hologram/projectiles.gif)
+![Projectiles](../images/uber-shader-vfx/projectiles.gif)
 
-![Shockwave](../images/sketch-hologram/shockwave.gif)
+![Shockwave](../images/uber-shader-vfx/shockwave.gif)
 
 If you have any question you can message me directly [@tomdns_](https://twitter.com/tomdns_)
 
