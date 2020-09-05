@@ -10,3 +10,9 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
+
+.card {
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: row;
+}
