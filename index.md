@@ -1,6 +1,6 @@
 <div class="card">
     <div>
-        <img src="images/sliced-mountains/header.png" alt="image" width="200"/> 
+        <img src="images/sliced-mountains/mountain.png" alt="image" width="200"/> 
     </div>
     <div class="card_child">
         <a href="tutorials/sliced-mountains.html">1. Houdini Tutorial - Sliced Mountains</a><br>
@@ -14,8 +14,6 @@
     </div>
     <div class="card_child">
         <a href="tutorials/simple-outline-post-process.html">1. Shader Tutorial - Simple Outline Post-Process</a><br>
-        A specific pixel-perfect outline for Desktop Garden, my #LD46 jam entry
+        A specific pixel-perfect outline for Desktop Garden, our #LD46 jam entry
     </div>
 </div>
-
-2.  [Shader Tutorial - Outline Post Process](./tutorials/simple-outline-post-process.html)
