@@ -14,6 +14,8 @@ Recently I made a Uber shader specially for VFX, I made a few tests to try it ou
 
 ![Shockwave](../images/uber-shader-vfx/shockwave.gif =250x)
 
+<img src="../images/uber-shader-vfx/shockwave.gif" width="250"/>
+
 If you have any question you can message me directly [@tomdns_](https://twitter.com/tomdns_)
 
 * * *
