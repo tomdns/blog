@@ -4,7 +4,7 @@ title: Voxel Animation Textures
 description: Project
 ---
 
-# Shader Project - Uber Shader VFX
+# Shader Project - Voxel Animation Textures
 
 <div class="image_container">
     <img src="../images/voxel-animation-texture/explosion.gif" width="250"/>
