@@ -34,7 +34,6 @@
     </div>
     <div class="card_child">
         <a href="articles/uber-shader-vfx.html">Shader Project #2 - Uber Shader VFX</a><br>
-        Project made to try my uber shader made for VFX
     </div>
 </div>
 
