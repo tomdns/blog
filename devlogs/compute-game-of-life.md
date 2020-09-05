@@ -47,7 +47,7 @@ I haven't really found a better way and it can make more complicated block types
 
 ![Types](../images/compute-game-of-life/sandgame.png)
 
-Here for the fire I just used Conway's game of life to simulate it, and when it touches a tree block the TREE block becomes a TREE_BURNING type. This means in my TREE behaviour if any neighbour is a FIRE or a TREE_BURNING, it has a chance to become a TREE_BURNING aswell next iteration.
+Here for the fire behaviour I used Conway's game of life, and it spreads to neighbour pixels if they're trees. This means in my TREE behaviour if any neighbour is a FIRE or a TREE_BURNING, it has a chance to become a TREE_BURNING aswell next iteration.
 
 ```c++
     if(state == TREE)
