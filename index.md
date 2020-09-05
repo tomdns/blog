@@ -4,7 +4,7 @@
     </div>
     <div class="card_child">
         <div>
-        <a href="articles/compute-game-of-life.html">Shader Project #3 - A Sand Game Running In A Compute Shader</a><br>
+        <a href="articles/compute-game-of-life.html">Shader Project #4 - A Sand Game Running In A Compute Shader</a><br>
         A version of the classic game running on the GPU
         </div>
         <div class="card_date">
@@ -28,40 +28,6 @@
         April 2020
         </div>  
     </div>  
-</div>
-
-***
-
-<div class="card">
-    <div>
-        <img src="images/stalberg-grid/process.gif" alt="image" class="card_preview" /> 
-    </div>
-    <div class="card_child">
-        <div>
-        <a href="">Houdini Project #1 - Townscaper's grid</a><br>    
-        Quick attempt in Houdini to generate a grid like the one in Townscaper by Oskar Stålberg
-        </div>
-        <div class="card_date">
-        November 2019
-        </div>
-    </div>
-</div>
-
-***
-
-<div class="card">
-    <div>
-        <img src="images/sliced-mountains/mountain_final.png" alt="image" class="card_preview" /> 
-    </div>
-    <div class="card_child">
-        <div>
-        <a href="articles/sliced-mountains.html">Houdini Tutorial #1 - Sliced Mountains</a><br>
-        Learn how to generate Godus-inspired islands using heightfields in Houdini
-        </div>
-        <div class="card_date">
-        May 2019
-        </div>
-    </div>
 </div>
 
 ***
@@ -94,6 +60,40 @@
         </div>
         <div class="card_date">
         December 2019
+        </div>
+    </div>
+</div>
+
+***
+
+<div class="card">
+    <div>
+        <img src="images/stalberg-grid/process.gif" alt="image" class="card_preview" /> 
+    </div>
+    <div class="card_child">
+        <div>
+        <a href="">Houdini Project #1 - Townscaper's grid</a><br>    
+        Quick attempt in Houdini to generate a grid like the one in Townscaper by Oskar Stålberg
+        </div>
+        <div class="card_date">
+        November 2019
+        </div>
+    </div>
+</div>
+
+***
+
+<div class="card">
+    <div>
+        <img src="images/sliced-mountains/mountain_final.png" alt="image" class="card_preview" /> 
+    </div>
+    <div class="card_child">
+        <div>
+        <a href="articles/sliced-mountains.html">Houdini Tutorial #1 - Sliced Mountains</a><br>
+        Learn how to generate Godus-inspired islands using heightfields in Houdini
+        </div>
+        <div class="card_date">
+        May 2019
         </div>
     </div>
 </div>
