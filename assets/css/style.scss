@@ -34,11 +34,6 @@ img {
 .card_child {
     width: 50%;
     margin: 5px;
-}
-
-.card_child_flex {
-    width: 50%;
-    margin: 5px;
     display: flex;
     flex-direction: column;
 }
@@ -46,6 +41,8 @@ img {
 .card_date {
     text-align: right;
     margin-top: 5px;
+    font-style: italic;
+    font-size: small;
 }
 
 .card_preview {
