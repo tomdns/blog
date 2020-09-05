@@ -77,6 +77,8 @@ Here for the fire behaviour I used Conway's game of life, and it spreads to neig
 
 At the end of the simulation the compute also sets the texture color according to the buffer pixels type, since I'm only modifying the RWStructuredBuffer here, not the texture directly.
 
+You can see it in action [here](https://preview.redd.it/vzwvhd3oehf51.gif?format=mp4&s=db4d21f6946280f9a162aa0b1a0a86245a7bd38c)
+
 * * *
 
 [back](../)
