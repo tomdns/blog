@@ -19,7 +19,7 @@ It was also a good occasion to make a custom Material inspector, using the *Shad
 
 Here when serializing the properties I look up the shader's properties names directly so I can have special behaviours like grouping the texture and its tiling/offset/speed if the properties names match. 
 
-The toggled tabs are a bit hacky, I'm actually using a property in the shader that stores the state of the tab toggle (activated/deactivated) and the state of the tab itself (opened/closed). The property line itself (with the toggle) is drawn using a MaterialPropertyDrawer, and other properties that start with the name will get drawn below it, and only when it's opened.
+The toggled foldouts are a bit hacky, I'm actually using a property in the shader that stores the state of the foldout toggle (activated/deactivated) and the state of the foldout itself (opened/closed). The property line itself (with the toggle) is drawn using a MaterialPropertyDrawer, and other properties that start with the name will get drawn below it, only when it's opened.
 
 <img src="../images/uber-shader-vfx/shader.png" width="250"/>
 
@@ -30,6 +30,8 @@ Here's an example in the shader
     [HDR] _HitColor ("Hit Color", Color) = (1,1,1,1)
     _HitLength ("Hit Length", Float) = 1
 ```
+
+Here _ToggleHit.x contains the toggle state, and _ToggleHit.y the tab state.
 
 The MaterialPropertyDrawer of the toggle also handles setting the shader keywords, _FEATURE_HITFLASH in this case.
 
