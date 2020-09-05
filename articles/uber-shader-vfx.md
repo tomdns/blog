@@ -30,8 +30,6 @@ The toggled foldouts are a bit hacky, I'm actually using a property in the shade
 </div>
 </div>
 
-***
-
 Here's an example in the shader
 
 ```c#
