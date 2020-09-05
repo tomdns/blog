@@ -17,4 +17,10 @@ img {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 20px;
+}
+
+.card_child {
+    width: 50%;
+    margin: 5px;
 }
