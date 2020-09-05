@@ -15,6 +15,8 @@ Recently I made a Uber shader specially for VFX, I made a few tests to try it ou
     <img src="../images/uber-shader-vfx/shockwave.gif" width="250"/>
 </div>
 
+***
+
 <div class="card">
     <div>
         <img src="../images/uber-shader-vfx/shader.png" width="250"/>
@@ -27,6 +29,8 @@ Here when serializing the properties I look up the shader's properties names dir
 
 The toggled foldouts are a bit hacky, I'm actually using a property in the shader that stores the state of the foldout toggle (activated/deactivated) and the state of the foldout itself (opened/closed). The property line itself (with the toggle) is drawn using a MaterialPropertyDrawer, and other properties that start with the name will get drawn below it, only when it's opened.
 </div>
+
+***
 
 </div>
 
