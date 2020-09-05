@@ -25,7 +25,7 @@
         A specific pixel-perfect outline for Desktop Garden, our #LD46 jam entry
         </div>
         <div class="card_date">
-        August 2020
+        April 2020
         </div>  
     </div>  
 </div>
@@ -42,7 +42,7 @@
         Quick attempt in Houdini to generate a grid like the one in Townscaper by Oskar Stålberg
         </div>
         <div class="card_date">
-        August 2020
+        November 2019
         </div>
     </div>
 </div>
@@ -59,7 +59,7 @@
         Learn how to generate Godus-inspired islands using heightfields in Houdini
         </div>
         <div class="card_date">
-        August 2020
+        May 2019
         </div>
     </div>
 </div>
@@ -76,7 +76,7 @@
         Custom shader & inspector to toggle shader features easily
         </div>
         <div class="card_date">
-        August 2020
+        March 2020
         </div>
     </div>
 </div>
@@ -93,7 +93,7 @@
         VATs for voxel simulations, from Houdini to Unity using Alembic
         </div>
         <div class="card_date">
-        August 2020
+        December 2019
         </div>
     </div>
 </div>
@@ -110,7 +110,7 @@
         Project made for the 18th sketch edition on realtimevfx.com. GPU Particles, Compute & Geometry shaders 
         </div>
         <div class="card_date">
-        August 2020
+        November 2018
         </div>
     </div>
 </div>
