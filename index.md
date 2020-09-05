@@ -24,6 +24,18 @@
 
 <div class="card">
     <div>
+        <img src="images/stalberg-grid/process.gif" alt="image" class="card_preview" /> 
+    </div>
+    <div class="card_child">
+        <a href="">Houdini Project #1 - Townscaper's grid</a><br>    
+        An implementation in Houdini to generate a grid like the one in Townscaper by Oskar Stålberg
+    </div>
+</div>
+
+***
+
+<div class="card">
+    <div>
         <img src="images/sliced-mountains/mountain_final.png" alt="image" class="card_preview" /> 
     </div>
     <div class="card_child">
