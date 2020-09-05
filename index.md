@@ -8,6 +8,8 @@
     </div>
 </div>
 
+***
+
 <div class="card">
     <div>
         <img src="images/simple-outline-post-process/header.png" alt="image" class="card_preview" /> 
@@ -17,6 +19,8 @@
         A specific pixel-perfect outline for Desktop Garden, our #LD46 jam entry
     </div>
 </div>
+
+***
 
 <div class="card">
     <div>
@@ -28,6 +32,8 @@
     </div>
 </div>
 
+***
+
 <div class="card">
     <div>
         <img src="images/uber-shader-vfx/projectiles.gif" alt="image" class="card_preview" /> 
@@ -36,6 +42,8 @@
         <a href="articles/uber-shader-vfx.html">Shader Project #2 - Uber Shader VFX</a><br>
     </div>
 </div>
+
+***
 
 <div class="card">
     <div>
