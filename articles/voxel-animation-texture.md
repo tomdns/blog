@@ -8,7 +8,7 @@ description: Project
 
 <div class="image_container">
     <img src="../images/voxel-animation-texture/explosion.gif" width="250"/>
-    <img src="../images/voxel-animation-texture/waves.gif" width="250"/>
+    <img src="../images/voxel-animation-texture/waves.gif" width="300"/>
 </div>
 
 ***
