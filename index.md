@@ -28,7 +28,7 @@
     </div>
     <div class="card_child">
         <a href="">Houdini Project #1 - Townscaper's grid</a><br>    
-        An implementation in Houdini to generate a grid like the one in Townscaper by Oskar Stålberg
+        Quick attempt in Houdini to generate a grid like the one in Townscaper by Oskar Stålberg
     </div>
 </div>
 
@@ -52,6 +52,7 @@
     </div>
     <div class="card_child">
         <a href="articles/uber-shader-vfx.html">Shader Project #3 - Uber Shader VFX</a><br>
+        Custom shader & inspector to toggle shader features easily
     </div>
 </div>
 
