@@ -6,7 +6,7 @@ description: Devnotes
 
 ![Header](../images/compute-game-of-life/sandgame_unity.png)
 
-# Devnotes - Sand Game With Compute Shaders
+# Shader Project - Sand Game With Compute Shaders
 
 * * *
 

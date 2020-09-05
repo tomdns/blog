@@ -3,7 +3,7 @@
         <img src="images/compute-game-of-life/sandgame_unity.png" alt="image" class="card_preview" /> 
     </div>
     <div class="card_child">
-        <a href="devlogs/compute-game-of-life.html">Devnotes #1 - A Sand Game Running In A Compute Shader</a><br>
+        <a href="articles/compute-game-of-life.html">Shader Project #3 - A Sand Game Running In A Compute Shader</a><br>
         A version of the classic game running on the GPU
     </div>
 </div>
