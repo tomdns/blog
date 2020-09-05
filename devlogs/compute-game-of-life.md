@@ -49,7 +49,7 @@ So in my *Start()* function after creating the *pixelsBuffer*:
 
 ```c#
     compute.SetBuffer(startKernel, "_Pixels", pixelsBuffer);
-    compute.Dispatch(updateKernel, width/8, height/8, 1);
+    compute.Dispatch(startKernel, width/8, height/8, 1);
 
     compute.SetBuffer(updateKernel, "_Pixels", pixelsBuffer);
 ``` 

@@ -14,11 +14,11 @@ description: Tutorials
 
 ## Intro
 
-New Ludum Dare, new breakdown! We decided to make a weird game that's playable on your own desktop. See it in action [here](https://borderline.itch.io/desktop-garden). We wanted an easy way to add contrast to the whole image and keep a good visibility no matter what the background is. We went for a post-process outline, let's see how it was made!
+New Ludum Dare, new breakdown! We decided to make a weird game that's playable on your own desktop. See it in action [here](https://borderline.itch.io/desktop-garden). We wanted an easy way to add contrast to the whole image and keep a good visibility no matter what the background is. Let's see how it was made
 
 ## 1 - Post Process
 
-First thing is to setup the post process logic itself. The idea is to **blit** into the main render texture using a special shader. This can be done via a small script added on the camera.
+First thing is to setup the post process itself. We have to **blit** into the main render texture using a special shader. This can be done via a small script added on the camera.
 
 ```c#
 public class PostProcess : MonoBehaviour
@@ -32,7 +32,7 @@ public class PostProcess : MonoBehaviour
 }
 ```
 
-Now everytime we render a frame, the _MainTex property of *material* will be updated with the content of the RenderTexture. Meaning that we can now manipulate the texture however we want in the shader.
+Now everytime we render a frame, the _MainTex property of *material* will be updated with the content of the RenderTexture. Meaning that we can manipulate the texture however we want in the shader.
 A simple shader that fetches the main texture would look like this:
 
 ```c++
