@@ -27,3 +27,13 @@
         Learn how to generate Godus-inspired islands using heightfields in Houdini
     </div>
 </div>
+
+<div class="card">
+    <div>
+        <img src="images/sketch-hologram/hologram.gif" alt="image" class="card_preview" /> 
+    </div>
+    <div class="card_child">
+        <a href="tutorials/sliced-mountains.html">Shader Project #1 - Hologram (RTVFX Sketch #18)</a><br>
+        Project made for the 18th sketch edition on realtimevfx.com. GPU Particles, Compute & Geometry shaders 
+    </div>
+</div>
