@@ -18,8 +18,6 @@ We export a point cloud from Houdini (.abc file) that basically contains all the
 
 In Unity we used the Alembic package to import the point cloud. It already comes with a set up to draw any mesh instantiated on each point, using DrawMeshInstancedIndirect. Then in the shader we read the texture using the SV_InstanceID to collapse or not the vertices of the voxel according to the state at an instant t.
 
-***
-
 If you have any question you can message me directly [@tomdns_](https://twitter.com/tomdns_)
 
 ***
