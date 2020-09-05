@@ -51,7 +51,7 @@
     </div>
     <div class="card_child">
         <a href="articles/voxel-animation-texture.html">Shader Project #2 - Voxel Animation Textures</a><br>
-        VATs for voxel simulations, using Alembic in Unity
+        VATs for voxel simulations, from Houdini to Unity using Alembic
     </div>
 </div>
 
