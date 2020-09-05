@@ -22,7 +22,7 @@ Recently I made a Uber shader specially for VFX, I made a few tests to try it ou
     </div>
 
 <div class="card_child">
-It was also a good occasion to make a custom Material inspector, using the *ShaderGUI* api and *MaterialPropertyDrawers*. 
+It was also a good occasion to make a custom Material inspector, using the ShaderGUI api and MaterialPropertyDrawers. 
 
 Here when serializing the properties I look up the shader's properties names directly so I can have special behaviours like grouping the texture and its tiling/offset/speed if the properties names match. 
 
