@@ -21,6 +21,12 @@ img {
     margin-top: 10px;
 }
 
+.image_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
 .card_child {
     width: 50%;
     margin: 5px;
