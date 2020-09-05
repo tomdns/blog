@@ -36,11 +36,23 @@ I send a RWStructuredBuffer the size of my texture (width * height), so for each
 The struct has to be matched in the compute exactly the same.
 
 Each frame I send the texture to the material, to the compute, and I dispatch the compute.
-I kept the thread counts to [8,8,1] so I dispatch it this way
+I kept the thread counts to [8,8,1] so I dispatch it this way in *Update()*
 
 ```c#
     compute.Dispatch(updateKernel, width/8, height/8, 1);
 ```
+
+I also dispatch another kernel function (once) to set default values if I input a texture instead of a blank RT ( see the Unity logo ).
+I dispatch it at the start and it just sets my buffer block types to AIR or TREE based on the pixels color. 
+That means I have to set the pixelsBuffer to both kernels. No need to read back after dispatching the start kernel.
+So in my *Start()* function after creating the *pixelsBuffer*:
+
+```c#
+    compute.SetBuffer(startKernel, "_Pixels", pixelsBuffer);
+    compute.Dispatch(updateKernel, width/8, height/8, 1);
+
+    compute.SetBuffer(updateKernel, "_Pixels", pixelsBuffer);
+``` 
 
 The rules of the simulation are fairly simple, for each block type you describe what to do according to the direct neighbours to the current pixel. The tricky part is for example with sand you want to have a condition for the sand block to become air when falling and vice versa, since you can't modify neighbour pixels directly, you need to have both conditions. 
 I haven't really found a better way and it can make more complicated block types a pain to make but still, using basic rules you can have some really cool effects.
