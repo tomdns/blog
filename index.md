@@ -92,7 +92,7 @@
     <div class="card_child">
         <div>
         <a href="">Shader Project - Shield Impacts</a><br>    
-        A use case of sending an array of values to the shader
+        An use case of sending an array of values to the shader
         </div>
         <div class="card_date">
         September 2019
