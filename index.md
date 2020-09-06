@@ -1,10 +1,12 @@
+## 2020
+
 <div class="card">
     <div>
         <img src="images/compute-game-of-life/sandgame_unity.png" alt="image" class="card_preview" /> 
     </div>
     <div class="card_child">
         <div>
-        <a href="articles/compute-game-of-life.html">Shader Project #4 - A Sand Game Running In A Compute Shader</a><br>
+        <a href="articles/compute-game-of-life.html">Shader Project - A Sand Game Running In A Compute Shader</a><br>
         A version of the classic game running on the GPU
         </div>
         <div class="card_date">
@@ -21,7 +23,7 @@
     </div>
     <div class="card_child">
         <div>
-        <a href="articles/simple-outline-post-process.html">Shader Tutorial #1 - Simple Outline Post-Process</a><br>
+        <a href="articles/simple-outline-post-process.html">Shader Tutorial - Simple Outline Post-Process</a><br>
         A specific pixel-perfect outline for Desktop Garden, our #LD46 jam entry
         </div>
         <div class="card_date">
@@ -38,7 +40,7 @@
     </div>
     <div class="card_child">
         <div>
-        <a href="articles/uber-shader-vfx.html">Shader Project #3 - Uber Shader VFX</a><br>
+        <a href="articles/uber-shader-vfx.html">Shader Project - Uber Shader VFX</a><br>
         Custom shader & inspector to toggle shader features easily
         </div>
         <div class="card_date">
@@ -47,7 +49,7 @@
     </div>
 </div>
 
-***
+## 2019
 
 <div class="card">
     <div>
@@ -55,7 +57,7 @@
     </div>
     <div class="card_child">
         <div>
-        <a href="articles/voxel-animation-texture.html">Shader Project #2 - Voxel Animation Textures</a><br>
+        <a href="articles/voxel-animation-texture.html">Shader Project - Voxel Animation Textures</a><br>
         VATs for voxel simulations, from Houdini to Unity using Alembic
         </div>
         <div class="card_date">
@@ -72,7 +74,7 @@
     </div>
     <div class="card_child">
         <div>
-        <a href="">Houdini Project #1 - Townscaper's grid</a><br>    
+        <a href="">Houdini Project - Townscaper's grid</a><br>    
         Quick attempt in Houdini to generate the grid from Townscaper by Oskar Stålberg
         </div>
         <div class="card_date">
@@ -85,15 +87,15 @@
 
 <div class="card">
     <div>
-        <img src="images/sliced-mountains/mountain_final.png" alt="image" class="card_preview" /> 
+        <img src="images/shield-impacts/shield.gif" alt="image" class="card_preview" /> 
     </div>
     <div class="card_child">
         <div>
-        <a href="articles/sliced-mountains.html">Houdini Tutorial #1 - Sliced Mountains</a><br>
-        Learn how to generate Godus-inspired islands using heightfields in Houdini
+        <a href="">Shader Project - Shield Impacts</a><br>    
+        A use case of sending an array of values to the shader
         </div>
         <div class="card_date">
-        May 2019
+        September 2019
         </div>
     </div>
 </div>
@@ -102,11 +104,28 @@
 
 <div class="card">
     <div>
+        <img src="images/sliced-mountains/mountain_final.png" alt="image" class="card_preview" /> 
+    </div>
+    <div class="card_child">
+        <div>
+        <a href="articles/sliced-mountains.html">Houdini Tutorial - Sliced Mountains</a><br>
+        Learn how to generate Godus-inspired islands using heightfields in Houdini
+        </div>
+        <div class="card_date">
+        May 2019
+        </div>
+    </div>
+</div>
+
+## 2018
+
+<div class="card">
+    <div>
         <img src="images/sketch-hologram/hologram.gif" alt="image" class="card_preview" /> 
     </div>
     <div class="card_child">
         <div>
-        <a href="articles/sketch-hologram.html">Shader Project #1 - Hologram (RTVFX Sketch #18)</a><br>
+        <a href="articles/sketch-hologram.html">Shader Project - Hologram (RTVFX Sketch #18)</a><br>
         Project made for the 18th sketch edition on realtimevfx.com. GPU Particles, Compute & Geometry shaders 
         </div>
         <div class="card_date">

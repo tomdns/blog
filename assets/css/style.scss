@@ -5,6 +5,10 @@ $section-headings-color: #ff6487;
 
 @import "{{ site.theme }}";
 
+body {
+    background-color: #212121;
+}
+
 img {
     display: block;
     margin-left: auto;
