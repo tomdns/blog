@@ -1,3 +1,5 @@
+## Thomas Denis - Technical Artist
+
 ## 2020
 
 <div class="card">
