@@ -19,8 +19,6 @@
     </div>
 </div>
 
-***
-
 <div class="card">
     <div>
         <img src="images/simple-outline-post-process/header.png" alt="image" class="card_preview" /> 
@@ -35,8 +33,6 @@
         </div>  
     </div>  
 </div>
-
-***
 
 <div class="card">
     <div>
@@ -70,8 +66,6 @@
     </div>
 </div>
 
-***
-
 <div class="card">
     <div>
         <img src="images/stalberg-grid/process.gif" alt="image" class="card_preview" /> 
@@ -87,8 +81,6 @@
     </div>
 </div>
 
-***
-
 <div class="card">
     <div>
         <img src="images/shield-impacts/shield.gif" alt="image" class="card_preview" /> 
@@ -103,8 +95,6 @@
         </div>
     </div>
 </div>
-
-***
 
 <div class="card">
     <div>
@@ -137,8 +127,6 @@
         </div>
     </div>
 </div>
-
-***
 
 <div class="card">
     <div>
