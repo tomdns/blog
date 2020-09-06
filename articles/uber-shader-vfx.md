@@ -6,7 +6,7 @@ description: Project
 
 # Shader Project - Uber Shader VFX
 
-## Summary
+***
 
 Recently I made a Uber shader specially for VFX, I made a few tests to try it out.
 
@@ -15,7 +15,6 @@ Recently I made a Uber shader specially for VFX, I made a few tests to try it ou
     <img src="../images/uber-shader-vfx/shockwave.gif" width="250"/>
 </div>
 
-***
 <div class="card">
     <div>
         <img src="../images/uber-shader-vfx/shader.png" width="250"/>

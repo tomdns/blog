@@ -6,11 +6,11 @@ description: Project
 
 # Shader Project - Shield Impacts
 
+***
+
 <div class="image_container">
     <img src="../images/shield-impacts/shield.gif" width="250"/>
 </div>
-
-***
 
 Small breakdown of the core ideas of the shader I showed on [twitter](https://twitter.com/tomdns_/status/1177389679815135233).
 

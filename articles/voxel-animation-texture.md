@@ -6,12 +6,12 @@ description: Project
 
 # Shader Project - Voxel Animation Textures
 
+***
+
 <div class="image_container">
     <img src="../images/voxel-animation-texture/explosion.gif" width="250"/>
     <img src="../images/voxel-animation-texture/waves.gif" height="308"/>
 </div>
-
-***
 
 Small experiment to have VATs to animate voxel animations inside Unity, made in collaboration with Pascal Beeckmans.
 We export a point cloud from Houdini (.abc file) that basically contains all the possible cells of the animation, like the bounding box of the whole simulation. Then we export a texture that contains for each frame of the animation the state of each voxel cell, and another texture that contains the temperature or w/e data we want, so we can color the voxels in engine.
