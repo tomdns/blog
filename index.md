@@ -91,7 +91,7 @@
     </div>
     <div class="card_child">
         <div>
-        <a href="">Shader Project - Shield Impacts</a><br>    
+        <a href="/">Shader Project - Shield Impacts</a><br>    
         An use case of sending an array of values to the shader
         </div>
         <div class="card_date">
@@ -130,6 +130,21 @@
         </div>
         <div class="card_date">
         November 2018
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div>
+        <img src="images/parallax-sphere/sphere.gif" alt="image" class="card_preview" /> 
+    </div>
+    <div class="card_child">
+        <div>
+        <a href="/">Shader Project - Parallax Sphere</a><br>
+        Parallax mapping without raymarching
+        </div>
+        <div class="card_date">
+        September 2018
         </div>
     </div>
 </div>
