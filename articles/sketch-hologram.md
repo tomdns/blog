@@ -10,6 +10,8 @@ description: Project
 
 ***
 
+Small breakdown of my entry for RTVFX's Sketch #18 (ended up 2nd!)
+
 The particles were made with a custom GPU particles system, using compute shaders to update them and geometry shaders for rendering.
 
 It renders the particles buffer using *Graphics.DrawProcedural* (with *MeshTopology.Points*) and in the point material itself I recreate the geometry using GS. In this case for each point in the GS I create small line strips (using LineStreams), typically one for the particle itself, and then some so it connects to the cylinder around, to the projectors building the hologram etc.
