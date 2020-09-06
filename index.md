@@ -73,7 +73,7 @@
     <div class="card_child">
         <div>
         <a href="">Houdini Project #1 - Townscaper's grid</a><br>    
-        Quick attempt in Houdini to generate a grid like the one in Townscaper by Oskar Stålberg
+        Quick attempt in Houdini to generate the grid from Townscaper by Oskar Stålberg
         </div>
         <div class="card_date">
         November 2019
