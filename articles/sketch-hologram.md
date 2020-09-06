@@ -8,7 +8,7 @@ description: Project
 
 # Shader Project - Hologram (RTVFX Sketch #18 entry)
 
-## Summary
+***
 
 The particles were made with a custom GPU particles system, using compute shaders to update them and geometry shaders for rendering.
 
