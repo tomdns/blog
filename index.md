@@ -134,6 +134,8 @@
     </div>
 </div>
 
+***
+
 <div class="card">
     <div>
         <img src="images/parallax-sphere/sphere.gif" alt="image" class="card_preview" /> 
