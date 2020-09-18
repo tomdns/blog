@@ -1,17 +1,5 @@
 <script>
 
-class Article 
-{
-    constructor() 
-    {
-        this.title          = "Default";
-        this.thumbnail      = "";
-        this.date           = "";
-        this.link           = "";
-        this.description    = "";
-    }
-}
-
 function AddArticle(article)
 {
     var template = 
@@ -31,11 +19,11 @@ function AddArticle(article)
 '    </div>'+
 '</div>';
 
-    template = template.replace('[THUMBNAIL]', 'images/tips-build-size/log.png');
-    template = template.replace('[LINK]', 'articles/tips-build-size.html');
-    template = template.replace('[HEADER]', 'Unity Tips - Build Size And Assets Usage');
-    template = template.replace('[DESCRIPTION]', 'Quick tip on how to spot what\'s taking up place in your project');
-    template = template.replace('[DATE]', 'September 2020');
+    template = template.replace('[THUMBNAIL]', article.thumbnail);
+    template = template.replace('[LINK]', article.link);
+    template = template.replace('[HEADER]', article.header);
+    template = template.replace('[DESCRIPTION]', article.description);
+    template = template.replace('[DATE]', article.date);
 
     document.getElementById("container").insertAdjacentHTML('beforeend', template);
 
@@ -53,7 +41,13 @@ function AddArticle(article)
 <div id="container">
 </div>
 <script type="text/javascript">
-AddArticle(new Article());
+AddArticle({
+    header: 'Unity Tips - Build Size And Assets Usage',
+    link: 'articles/tips-build-size.html',
+    thumbnail: 'images/tips-build-size/log.png',
+    description: 'Quick tip on how to spot what\'s taking up place in your project',
+    date: 'September 2020'
+});
 </script>
 
 <div class="card">
