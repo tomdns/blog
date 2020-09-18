@@ -20,12 +20,6 @@ Ludum Dare 44 is now over. It's been fun! Since quite a few people asked for it,
 
 We wanted to recreate islands similar to the ones we find in *Godus*, in a more simplified version.
 
-Here's how it works:
-- Generate a heightfield
-- Convert it to points
-- Loop through all the points according to their height
-- Reconstruct the slices from each layer of points
-
 ## 1 - Heightfield
 
 The island height generation is quite basic. I only used one **HeightField Noise** SOP and played with the parameters till I was happy with the results. Just make sure to set *Combine Method* to *Maximum* so that we only get values above 0.

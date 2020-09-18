@@ -6,6 +6,21 @@
 
 <div class="card">
     <div>
+        <img src="images/tips-build-size/log.png" alt="image" class="card_preview" /> 
+    </div>
+    <div class="card_child">
+        <div>
+        <a href="articles/tips-build-size.html">Unity Tips - Build Size And Assets Usage</a><br>
+        Quick tip on how to spot what's taking up place in your project.
+        </div>
+        <div class="card_date">
+        September 2020
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div>
         <img src="images/compute-game-of-life/sandgame_unity.png" alt="image" class="card_preview" /> 
     </div>
     <div class="card_child">
