@@ -10,8 +10,13 @@ var tags =
     'post-process'  : 1
 };
 
-function ToggleTag(tag) {
+function ToggleTag(el, tag) {
     tags[tag] = 1 - tags[tag];
+
+    if(tags[tag] == 0)
+    el.classList.remove('tag_' + tag);
+    else
+    el.classList.add('tag_' + tag);
 
     var els = document.getElementsByClassName("card");
     for(var i = 0; i < els.length; i++)
@@ -87,12 +92,12 @@ function AddArticle(article) {
 ***
 
 <div id="tags_container">
-<span class="tag tag_shaders" onclick="ToggleTag('shaders')">shaders</span>
-<span class="tag tag_vfx" onclick="ToggleTag('vfx')">vfx</span>
-<span class="tag tag_houdini" onclick="ToggleTag('houdini')">houdini</span>
-<span class="tag tag_compute" onclick="ToggleTag('compute')">compute</span>
-<span class="tag tag_tips" onclick="ToggleTag('tips')">tips</span>
-<span class="tag tag_post-process" onclick="ToggleTag('post-process')">post-process</span>
+<span class="tag tag_shaders" onclick="ToggleTag(this, 'shaders')">shaders</span>
+<span class="tag tag_vfx" onclick="ToggleTag((this, 'vfx')">vfx</span>
+<span class="tag tag_houdini" onclick="ToggleTag((this, 'houdini')">houdini</span>
+<span class="tag tag_compute" onclick="ToggleTag((this, 'compute')">compute</span>
+<span class="tag tag_tips" onclick="ToggleTag((this, 'tips')">tips</span>
+<span class="tag tag_post-process" onclick="ToggleTag((this, 'post-process')">post-process</span>
 </div>
 
 <div id="container">
