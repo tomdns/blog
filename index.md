@@ -38,6 +38,8 @@ function AddArticle(article)
     template = template.replace('[DATE]', 'September 2020');
 
     document.getElementById("container").insertAdjacentHTML('beforeend', template);
+
+    console.log("Added Article");
 }
 
 </script>
