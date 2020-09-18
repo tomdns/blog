@@ -58,7 +58,6 @@ img {
 }
 
 .tag {
-    background-color: #ff6487;
     padding: 3px;
     padding-left: 10px;
     padding-right: 10px;
@@ -67,3 +66,10 @@ img {
     font-size: 14px;
     margin: 2px;
 }
+
+.tag_shaders        { background-color: #ff6487; }
+.tag_tips           { background-color: #9e9da7; }
+.tag_post-process   { background-color: #ab77ff; }
+.tag_houdini        { background-color: #ffac4e; }
+.tag_compute        { background-color: #7dc0aa; }
+.tag_vfx            { background-color: #6da0ff; }

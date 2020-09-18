@@ -33,8 +33,9 @@ function AddArticle(article)
     var tags = "";
     if(article.tags)
     {
-        for(var i = 0; i < article.tags.length; i++)
-        tags += '<span class="tag">'+ article.tags[i] +'</span>';
+        for(var i = 0; i < article.tags.length; i++) {
+            tags += '<span class="tag ' + ("tags_" + article.tags[i]) + '">'+ article.tags[i] +'</span>';
+        }
     }
     
     template = template.replace('[TAGS]', tags);
@@ -60,7 +61,7 @@ AddArticle({
     link:           'articles/tips-build-size.html',
     thumbnail:      'images/tips-build-size/log.png',
     date:           'September 2020',
-    tags:           ['tips', 'git']
+    tags:           ['tips']
 });
 AddArticle({
     header:         'Shader Project - A Sand Game With Compute Shaders',
@@ -75,55 +76,63 @@ AddArticle({
     description:    'A specific pixel-perfect outline for Desktop Garden, our #LD46 jam entry',
     link:           'articles/simple-outline-post-process.html',
     thumbnail:      'images/simple-outline-post-process/header.png',
-    date:           'April 2020'
+    date:           'April 2020',
+    tags:           ['shaders', 'post-process']
 });
 AddArticle({
     header:         'Shader Project - Uber Shader VFX',
     description:    'Custom shader & inspector to toggle shader features easily',
     link:           'articles/uber-shader-vfx.html',
     thumbnail:      'images/uber-shader-vfx/projectiles.gif',
-    date:           'March 2020'
+    date:           'March 2020',
+    tags:           ['shaders', 'vfx']
 });
 AddArticle({
     header:         'Shader Project - Voxel Animation Textures',
     description:    'VATs for voxel simulations, from Houdini to Unity using Alembic',
     link:           'articles/voxel-animation-texture.html',
     thumbnail:      'images/voxel-animation-texture/waves.gif',
-    date:           'December 2019'
+    date:           'December 2019',
+    tags:           ['shaders', 'houdini']
 });
 AddArticle({
     header:         'Houdini Project - Townscaper\'s grid',
     description:    'Quick attempt in Houdini to generate the grid from Townscaper by Oskar Stålberg',
     link:           'javascript:void(0)',
     thumbnail:      'images/stalberg-grid/process.gif',
-    date:           'November 2019'
+    date:           'November 2019',
+    tags:           ['houdini']
 });
 AddArticle({
     header:         'Shader Project - Shield Impacts',
     description:    'An use case of sending an array of values to the shader',
     link:           'articles/shield-impacts.html',
     thumbnail:      'images/shield-impacts/shield.gif',
-    date:           'September 2019'
+    date:           'September 2019',
+    tags:           ['shaders', 'vfx']
 });
 AddArticle({
     header:         'Houdini Tutorial - Sliced Mountains',
     description:    'Learn how to generate Godus-inspired islands using heightfields in Houdini',
     link:           'articles/sliced-mountains.html',
     thumbnail:      'images/sliced-mountains/mountain_final.png',
-    date:           'May 2019'
+    date:           'May 2019',
+    tags:           ['houdini']
 });
 AddArticle({
     header:         'Shader Project - Hologram (RTVFX Sketch #18)',
     description:    'Project made for the 18th sketch edition on realtimevfx.com. GPU Particles, Compute & Geometry shaders',
     link:           'articles/sketch-hologram.html',
     thumbnail:      'images/sketch-hologram/hologram.gif',
-    date:           'November 2018'
+    date:           'November 2018',
+    tags:           ['shaders', 'vfx', 'compute']
 });
 AddArticle({
     header:         'Shader Project - Parallax Sphere',
     description:    'Parallax mapping without raymarching',
     link:           'javascript:void(0)',
     thumbnail:      'images/parallax-sphere/sphere.gif',
-    date:           'September 2018'
+    date:           'September 2018',
+    tags:           ['shaders', 'vfx']
 });
 </script>
