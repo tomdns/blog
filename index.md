@@ -33,7 +33,7 @@ function AddArticle(article)
     var tags = "";
     if(article.tags)
     {
-        for(var i = 0; i < article.tags.length(); i++)
+        for(var i = 0; i < article.tags.length; i++)
         tags += '<span class="tag">'+ article.tags[i] +'</span>';
     }
     
