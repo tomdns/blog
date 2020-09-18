@@ -33,11 +33,13 @@ function ToggleTag(el, tag) {
         {
             els[i].style.visibility = 'hidden';
             els[i].style.opacity = '0';
+            els[i].style.display = 'none';
         }
         else
         {
             els[i].style.visibility = 'visible';
             els[i].style.opacity = '1';
+            els[i].style.display = '';
         }
     }
 
