@@ -24,7 +24,11 @@ function ToggleTag(tag) {
             hide = false;
         }
 
-        if(hide) els[i].style.display = 'none';
+        if(hide) 
+        {
+            els[i].style.display = 'none';
+            console.log(els[i]);
+        }
     }
 
     console.log("Toggled " + tag);
