@@ -31,11 +31,11 @@ function AddArticle(article)
 '    </div>'+
 '</div>';
 
-    template = template.Replace('[THUMBNAIL]', 'images/tips-build-size/log.png');
-    template = template.Replace('[LINK]', 'articles/tips-build-size.html');
-    template = template.Replace('[HEADER]', 'Unity Tips - Build Size And Assets Usage');
-    template = template.Replace('[DESCRIPTION]', 'Quick tip on how to spot what\'s taking up place in your project');
-    template = template.Replace('[DATE]', 'September 2020');
+    template = template.replace('[THUMBNAIL]', 'images/tips-build-size/log.png');
+    template = template.replace('[LINK]', 'articles/tips-build-size.html');
+    template = template.replace('[HEADER]', 'Unity Tips - Build Size And Assets Usage');
+    template = template.replace('[DESCRIPTION]', 'Quick tip on how to spot what\'s taking up place in your project');
+    template = template.replace('[DATE]', 'September 2020');
 
     document.getElementById("container").insertAdjacentHTML('beforeend', template);
 }
