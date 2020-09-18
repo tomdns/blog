@@ -40,6 +40,7 @@ img {
 }
 
 .card_footer {
+    margin-top: 10px;
     display:flex;
     flex-direction:row;
     justify-content: space-between;
@@ -59,4 +60,10 @@ img {
 .tag {
     background-color: #ff6487;
     padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 50px;
+    color: white;
+    font-size: 14px;
+    margin: 2px;
 }
