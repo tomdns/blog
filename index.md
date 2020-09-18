@@ -15,7 +15,7 @@ function AddArticle(article)
 '        </div>'+
 '        <div class="card_footer>'+
 '           <div class="card_tags">'+
-'           [TAGS]'+
+'           Test'+
 '           </div>'+
 '           <div class="card_date">'+
 '           [DATE]'+
