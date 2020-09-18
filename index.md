@@ -31,12 +31,13 @@ function ToggleTag(el, tag) {
 
         if(hide) 
         {
-            els[i].style.display = 'none';
-            console.log(els[i]);
+            els[i].style.visibility = 'hidden';
+            els[i].style.opacity = '0';
         }
         else
         {
-            els[i].style.display = '';
+            els[i].style.visibility = 'visible';
+            els[i].style.opacity = '1';
         }
     }
 
