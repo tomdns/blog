@@ -39,6 +39,11 @@ img {
     justify-content: space-between;
 }
 
+.card_footer {
+    display:flex;
+    flex-direction:row;
+}
+
 .card_date {
     text-align: right;
     margin-top: 5px;

@@ -13,8 +13,13 @@ function AddArticle(article)
 '        <a href="[LINK]">[HEADER]</a><br>'+
 '        [DESCRIPTION]'+
 '        </div>'+
-'        <div class="card_date">'+
-'        [DATE]'+
+'        <div class="card_footer>'+
+'           <div class="card_tags">'+
+'           [TAGS]'+
+'           </div>'+
+'           <div class="card_date">'+
+'           [DATE]'+
+'           </div>'+
 '        </div>'+
 '    </div>'+
 '</div>';
@@ -24,6 +29,7 @@ function AddArticle(article)
     template = template.replace('[HEADER]', article.header);
     template = template.replace('[DESCRIPTION]', article.description);
     template = template.replace('[DATE]', article.date);
+    template = template.replace('[TAGS]', 'Test');
 
     document.getElementById("container").insertAdjacentHTML('beforeend', template);
 

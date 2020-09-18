@@ -10,7 +10,7 @@ description: Devnotes
 
 * * *
 
-Small experiments notes on making a sand game running in a Compute Shader...
+Small experiment notes on making a sand game running in a Compute Shader...
 
 Here I send a render texture to the compute that will contain the results of the simulation, I never read from it.
 I send a RWStructuredBuffer the size of my texture (width * height), so for each pixel I have a struct that contains whatever data I need to send. 
