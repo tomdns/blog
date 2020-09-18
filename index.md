@@ -34,7 +34,7 @@ function AddArticle(article)
     if(article.tags)
     {
         for(var i = 0; i < article.tags.length; i++) {
-            tags += '<span class="tag ' + ("tags_" + article.tags[i]) + '">'+ article.tags[i] +'</span>';
+            tags += '<span class="tag ' + ("tag_" + article.tags[i]) + '">'+ article.tags[i] +'</span>';
         }
     }
     
