@@ -29,6 +29,10 @@ function ToggleTag(tag) {
             els[i].style.display = 'none';
             console.log(els[i]);
         }
+        else
+        {
+            els[i].style.display = '';
+        }
     }
 
     console.log("Toggled " + tag);
