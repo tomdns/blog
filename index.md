@@ -1,3 +1,26 @@
+<script>
+
+class Article 
+{
+    constructor() 
+    {
+        this.title          = "";
+        this.thumbnail      = "";
+        this.date           = "";
+        this.link           = "";
+        this.description    = "";
+    }
+}
+
+function AddArticle(article)
+{
+    console.log("test");
+}
+
+AddArticle(new Article());
+
+</script>
+
 ## Thomas Denis - Technical Artist
 
 ***
