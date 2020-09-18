@@ -50,8 +50,11 @@ function AddArticle(article)
 
 ## 2020
 
-<div id="container" onload="AddArticle()">
+<div id="container">
 </div>
+<script type="text/javascript">
+AddArticle(new Article());
+</script>
 
 <div class="card">
     <div>
