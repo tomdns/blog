@@ -20,7 +20,7 @@ function ToggleTag(tag) {
         var hide = true;
         for(var j = 0; j < children.length; j++)
         {
-            if(tags[children[i].innerHTML] == 1)
+            if(tags[children[j].innerHTML] == 1)
             hide = false;
         }
 
