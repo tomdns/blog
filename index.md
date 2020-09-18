@@ -67,7 +67,7 @@ AddArticle({
     description:    'A version of the classic game running on the GPU',
     link:           'articles/compute-game-of-life.html',
     thumbnail:      'images/compute-game-of-life/trees.gif',
-    date:           'August 2020'
+    date:           'August 2020',
     tags:           ['shaders', 'compute']
 });
 AddArticle({
