@@ -42,6 +42,7 @@ img {
 .card_footer {
     display:flex;
     flex-direction:row;
+    justify-content: space-between;
 }
 
 .card_date {
@@ -53,4 +54,9 @@ img {
 
 .card_preview {
     width: 250px;
+}
+
+.tag {
+    background-color: #ff6487;
+    padding: 3px;
 }

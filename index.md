@@ -15,7 +15,7 @@ function AddArticle(article)
 '        </div>'+
 '        <div class="card_footer">'+
 '           <div class="card_tags">'+
-'           Test'+
+'           [TAGS]'+
 '           </div>'+
 '           <div class="card_date">'+
 '           [DATE]'+
@@ -29,7 +29,15 @@ function AddArticle(article)
     template = template.replace('[HEADER]', article.header);
     template = template.replace('[DESCRIPTION]', article.description);
     template = template.replace('[DATE]', article.date);
-    template = template.replace('[TAGS]', 'Test');
+
+    var tags = "";
+    if(articles.tags)
+    {
+        for(var i = 0; i < articles.tags.length(); i++)
+        tags += '<span class="tag">'+ articles.tags[i] +'</span>';
+    }
+    
+    template = template.replace('[TAGS]', tags);
 
     document.getElementById("container").insertAdjacentHTML('beforeend', template);
 
@@ -51,7 +59,8 @@ AddArticle({
     description:    'Quick tip on how to spot what\'s taking up place in your project',
     link:           'articles/tips-build-size.html',
     thumbnail:      'images/tips-build-size/log.png',
-    date:           'September 2020'
+    date:           'September 2020',
+    tags:           ['tips', 'git']
 });
 AddArticle({
     header:         'Shader Project - A Sand Game With Compute Shaders',
@@ -59,6 +68,7 @@ AddArticle({
     link:           'articles/compute-game-of-life.html',
     thumbnail:      'images/compute-game-of-life/trees.gif',
     date:           'August 2020'
+    tags:           ['shaders', 'compute']
 });
 AddArticle({
     header:         'Shader Tutorial - Simple Outline Post-Process',
