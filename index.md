@@ -51,9 +51,6 @@ function AddArticle(article)
 
 ***
 
-<div id="container">
-</div>
-
 <div id="tags_container">
 <span class="tag tag_shaders">shaders</span>
 <span class="tag tag_vfx">vfx</span>
@@ -61,6 +58,9 @@ function AddArticle(article)
 <span class="tag tag_compute">compute</span>
 <span class="tag tag_tips">tips</span>
 <span class="tag tag_post-process">post-process</span>
+</div>
+
+<div id="container">
 </div>
 
 <script type="text/javascript">
