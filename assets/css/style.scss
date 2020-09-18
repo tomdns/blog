@@ -17,6 +17,7 @@ img {
     justify-content: space-between;
     padding: 20px;
     margin-top: 10px;
+    border-bottom: 2px solid #eff0f1;
 }
 
 .image_container {
@@ -55,6 +56,10 @@ img {
 
 .card_preview {
     width: 250px;
+}
+
+#tags_container {
+    margin-bottom: 10px;
 }
 
 .tag {
