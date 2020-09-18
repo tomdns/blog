@@ -4,7 +4,7 @@ class Article
 {
     constructor() 
     {
-        this.title          = "";
+        this.title          = "Default";
         this.thumbnail      = "";
         this.date           = "";
         this.link           = "";
@@ -14,7 +14,30 @@ class Article
 
 function AddArticle(article)
 {
-    console.log("test");
+    var template = 
+
+'<div class="card">'+
+'    <div>'+
+'        <img src="[THUMBNAIL]" alt="image" class="card_preview" /> '+
+'    </div>'+
+'    <div class="card_child">'+
+'        <div>'+
+'        <a href="[LINK]">[HEADER]</a><br>'+
+'        [DESCRIPTION]'+
+'        </div>'+
+'        <div class="card_date">'+
+'        [DATE]'+
+'        </div>'+
+'    </div>'+
+'</div>';
+
+    template = template.Replace('[THUMBNAIL]', 'images/tips-build-size/log.png');
+    template = template.Replace('[LINK]', 'articles/tips-build-size.html');
+    template = template.Replace('[HEADER]', 'Unity Tips - Build Size And Assets Usage');
+    template = template.Replace('[DESCRIPTION]', 'Quick tip on how to spot what\'s taking up place in your project');
+    template = template.Replace('[DATE]', 'September 2020');
+
+    document.getElementById("container").insertAdjacentHTML('beforeend', template);
 }
 
 AddArticle(new Article());
@@ -26,6 +49,8 @@ AddArticle(new Article());
 ***
 
 ## 2020
+
+<div id="container"></div>
 
 <div class="card">
     <div>
