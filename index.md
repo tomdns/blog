@@ -54,6 +54,15 @@ function AddArticle(article)
 <div id="container">
 </div>
 
+<div id="tags_container">
+<span class="tag tag_shaders">shaders</span>
+<span class="tag tag_vfx">vfx</span>
+<span class="tag tag_houdini">houdini</span>
+<span class="tag tag_compute">compute</span>
+<span class="tag tag_tips">tips</span>
+<span class="tag tag_post-process">post-process</span>
+</div>
+
 <script type="text/javascript">
 AddArticle({
     header:         'Unity Tips - Build Size And Assets Usage',
@@ -93,7 +102,7 @@ AddArticle({
     link:           'articles/voxel-animation-texture.html',
     thumbnail:      'images/voxel-animation-texture/waves.gif',
     date:           'December 2019',
-    tags:           ['shaders', 'houdini']
+    tags:           ['shaders', 'houdini', 'vfx']
 });
 AddArticle({
     header:         'Houdini Project - Townscaper\'s grid',
