@@ -37,7 +37,7 @@ function AddArticle(article)
     template = template.replace('[DESCRIPTION]', 'Quick tip on how to spot what\'s taking up place in your project');
     template = template.replace('[DATE]', 'September 2020');
 
-    document.insertAdjacentHTML('beforeend', template);
+    document.getElementById("container").insertAdjacentHTML('beforeend', template);
 }
 
 AddArticle(new Article());
@@ -51,8 +51,6 @@ AddArticle(new Article());
 ## 2020
 
 <div id="container">
-Test
-<button onClick="AddArticle(new Article())")>Click</button>
 </div>
 
 <div class="card">
