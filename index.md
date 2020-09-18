@@ -1,7 +1,36 @@
 <script>
 
-function AddArticle(article)
+var tags = 
 {
+    'shaders'       : 1,
+    'vfx'           : 1,
+    'houdini'       : 1,
+    'compute'       : 1,
+    'tips'          : 1,
+    'post-process'  : 1
+};
+
+function ToggleTag(tag) {
+    tags[tag] = 1 - tags[tag];
+
+    var els = document.getElementsByClassName("card");
+    for(var i = 0; i < els.length; i++)
+    {
+        var children = els[i].getElementsByTagName("span");
+        var hide = true;
+        for(var j = 0; j < children.length; j++)
+        {
+            if(tags[children[i].innerHTML] == 1)
+            hide = false;
+        }
+
+        if(hide) els[i].style.display = 'none';
+    }
+
+    console.log("Toggled " + tag);
+}
+
+function AddArticle(article) {
     var template = 
 
 '<div class="card">'+
@@ -41,8 +70,6 @@ function AddArticle(article)
     template = template.replace('[TAGS]', tags);
 
     document.getElementById("container").insertAdjacentHTML('beforeend', template);
-
-    console.log("Added Article");
 }
 
 </script>
@@ -52,12 +79,12 @@ function AddArticle(article)
 ***
 
 <div id="tags_container">
-<span class="tag tag_shaders">shaders</span>
-<span class="tag tag_vfx">vfx</span>
-<span class="tag tag_houdini">houdini</span>
-<span class="tag tag_compute">compute</span>
-<span class="tag tag_tips">tips</span>
-<span class="tag tag_post-process">post-process</span>
+<span class="tag tag_shaders" onclick="ToggleTag('shaders')">shaders</span>
+<span class="tag tag_vfx" onclick="ToggleTag('vfx')">vfx</span>
+<span class="tag tag_houdini" onclick="ToggleTag('houdini')">houdini</span>
+<span class="tag tag_compute" onclick="ToggleTag('compute')">compute</span>
+<span class="tag tag_tips" onclick="ToggleTag('tips')">tips</span>
+<span class="tag tag_post-process" onclick="ToggleTag('post-process')">post-process</span>
 </div>
 
 <div id="container">
