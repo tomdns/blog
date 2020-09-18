@@ -11,7 +11,7 @@
     <div class="card_child">
         <div>
         <a href="articles/tips-build-size.html">Unity Tips - Build Size And Assets Usage</a><br>
-        Quick tip on how to spot what's taking up place in your project.
+        Quick tip on how to spot what's taking up place in your project
         </div>
         <div class="card_date">
         September 2020
@@ -25,7 +25,7 @@
     </div>
     <div class="card_child">
         <div>
-        <a href="articles/compute-game-of-life.html">Shader Project - A Sand Game Running In A Compute Shader</a><br>
+        <a href="articles/compute-game-of-life.html">Shader Project - A Sand Game With Compute Shaders</a><br>
         A version of the classic game running on the GPU
         </div>
         <div class="card_date">

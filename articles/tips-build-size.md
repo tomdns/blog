@@ -14,12 +14,12 @@ Everytime you build your project, you can see in the Editor.log file a whole bun
 
 ![Header](../images/tips-build-size/log.png)
 
-You can find the file here in the console tag:
+You can find the file here in the console tab:
 ![File](../images/tips-build-size/editor.png)
 
 This is also great to spot assets that may not be used anymore but still somehow end up in the build. 
 
-If you want to know where the asset is actually used you can grab its GUID in its .meta file, and considering you're using Git, you can do a *git grep guid* and it'll give you the list of references to this asset.
+If you want to know where the asset is actually used you can grab its GUID in its .meta file, and considering you're using Git, you can do a *git grep guid* and it'll give you the list of references to the asset.
 
 ![Grep](../images/tips-build-size/grep.png)
 
