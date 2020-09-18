@@ -93,11 +93,11 @@ function AddArticle(article) {
 
 <div id="tags_container">
 <span class="tag tag_shaders" onclick="ToggleTag(this, 'shaders')">shaders</span>
-<span class="tag tag_vfx" onclick="ToggleTag((this, 'vfx')">vfx</span>
-<span class="tag tag_houdini" onclick="ToggleTag((this, 'houdini')">houdini</span>
-<span class="tag tag_compute" onclick="ToggleTag((this, 'compute')">compute</span>
-<span class="tag tag_tips" onclick="ToggleTag((this, 'tips')">tips</span>
-<span class="tag tag_post-process" onclick="ToggleTag((this, 'post-process')">post-process</span>
+<span class="tag tag_vfx" onclick="ToggleTag(this, 'vfx')">vfx</span>
+<span class="tag tag_houdini" onclick="ToggleTag(this, 'houdini')">houdini</span>
+<span class="tag tag_compute" onclick="ToggleTag(this, 'compute')">compute</span>
+<span class="tag tag_tips" onclick="ToggleTag(this, 'tips')">tips</span>
+<span class="tag tag_post-process" onclick="ToggleTag(this, 'post-process')">post-process</span>
 </div>
 
 <div id="container">
