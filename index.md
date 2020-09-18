@@ -40,8 +40,6 @@ function AddArticle(article)
     document.getElementById("container").insertAdjacentHTML('beforeend', template);
 }
 
-AddArticle(new Article());
-
 </script>
 
 ## Thomas Denis - Technical Artist
@@ -50,7 +48,7 @@ AddArticle(new Article());
 
 ## 2020
 
-<div id="container">
+<div id="container" onload="AddArticle()">
 </div>
 
 <div class="card">
