@@ -31,10 +31,10 @@ function AddArticle(article)
     template = template.replace('[DATE]', article.date);
 
     var tags = "";
-    if(articles.tags)
+    if(article.tags)
     {
         for(var i = 0; i < article.tags.length(); i++)
-        tags += '<span class="tag">'+ articles.tags[i] +'</span>';
+        tags += '<span class="tag">'+ article.tags[i] +'</span>';
     }
     
     template = template.replace('[TAGS]', tags);
