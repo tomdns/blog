@@ -21,7 +21,7 @@
 
 <div class="card">
     <div>
-        <img src="images/compute-game-of-life/sandgame_unity.png" alt="image" class="card_preview" /> 
+        <img src="images/compute-game-of-life/trees.gif" alt="image" class="card_preview" /> 
     </div>
     <div class="card_child">
         <div>
