@@ -13,7 +13,7 @@ function AddArticle(article)
 '        <a href="[LINK]">[HEADER]</a><br>'+
 '        [DESCRIPTION]'+
 '        </div>'+
-'        <div class="card_footer>'+
+'        <div class="card_footer">'+
 '           <div class="card_tags">'+
 '           Test'+
 '           </div>'+
