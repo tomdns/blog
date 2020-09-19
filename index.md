@@ -111,7 +111,10 @@ function AddArticle(article) {
 
 <div class="header">
     <div>
-        <span id="header_title">Thomas Denis - Technical Artist</span>
+        <div>
+            <span id="header_title">Thomas Denis</span>
+            <span id="header_title_sub">Technical Artist</span>
+        </div>
     </div>
     <div id="social_container">
         <div>

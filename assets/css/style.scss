@@ -20,7 +20,12 @@ img {
 
 span#header_title {
     color: #ff6588;
-    font-size: larger;
+    font-size: x-large;
+}
+
+span#header_title_sub {
+    margin-left: 10px;
+    font-style: italic;
 }
 
 .social_icons {
