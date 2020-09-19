@@ -90,7 +90,19 @@ function AddArticle(article) {
 
 </script>
 
-## Thomas Denis - Technical Artist
+<div class="header">
+    <div>
+        <h2 id="thomas-denis---technical-artist">Thomas Denis - Technical Artist</h2>
+    </div>
+    <div id="social_container">
+        <a href="https://twitter.com/tomdns_" target="_blank">
+            <img src="images/icons/twitter.svg" />
+        </a>
+        <a href="mailto:thomas-denis@hotmail.com" target="_blank">
+            <img src="images/icons/mail.svg" />
+        </a>
+    </div>
+</div>
 
 ***
 
