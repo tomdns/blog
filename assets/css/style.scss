@@ -18,6 +18,11 @@ img {
     align-items: center;
 }
 
+span#header_title {
+    color: #ff6588;
+    font-size: larger;
+}
+
 .social_icons {
     width: 25px;
     filter: invert(53%) sepia(73%) saturate(1412%) hue-rotate(309deg) brightness(100%) contrast(102%);
@@ -29,8 +34,9 @@ img {
     justify-content: space-around;
 }
 
+
 #social_container div {
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 .card {
