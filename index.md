@@ -10,7 +10,10 @@ var tags =
     'post-process'  : 1
 };
 
+var tagsElements = {};
+
 function ToggleTag(el, tag) {
+    tagsElements[tag] = el;
     tags[tag] = 1 - tags[tag];
 
     if(tags[tag] == 0)
@@ -43,7 +46,23 @@ function ToggleTag(el, tag) {
         }
     }
 
-    console.log("Toggled " + tag);
+    var flag = 0;
+    for(const prop in tags)
+    {
+        if(tags[prop] == 1)
+        {
+            flag = 1;
+            return;
+        }
+    }
+
+    if(flag == 0) 
+    {
+        for(const prop in tags)
+        {
+            ToggleTag(tagsElements[prop], prop);
+        }
+    }
 }
 
 function AddArticle(article) {
