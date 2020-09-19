@@ -97,12 +97,12 @@ function AddArticle(article) {
     <div id="social_container">
         <div>
             <a href="https://twitter.com/tomdns_" target="_blank">
-                <img src="images/icons/twitter.svg" />
+                <img src="images/icons/twitter.svg" width="50px" />
             </a>
         </div>
         <div>
             <a href="mailto:thomas-denis@hotmail.com" target="_blank">
-                <img src="images/icons/email.svg" />
+                <img src="images/icons/email.svg" width="50px" />
             </a>
         </div>
     </div>
