@@ -80,6 +80,8 @@ And at last in the compute I also set the texture color according to the buffer 
 
 You can see it in action [here](https://preview.redd.it/vzwvhd3oehf51.gif?format=mp4&s=db4d21f6946280f9a162aa0b1a0a86245a7bd38c)
 
+If you have any question you can message me directly [@tomdns_](https://twitter.com/tomdns_)
+
 * * *
 
 [back](../)

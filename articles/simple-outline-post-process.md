@@ -8,12 +8,6 @@ description: Breakdown
 
 # Shader Breakdown - Simple Outline Post-Process
 
-> Specific pixel-perfect outline for Desktop Garden, our #LD46 jam entry
-
-* * *
-
-## Intro
-
 Here's a little breakdown of the outline post-process we made for our Ludum Dare entry. You can see it live [here](https://borderline.itch.io/desktop-garden). We wanted an easy way to add contrast to the whole image and keep a good visibility no matter what the background is, let's have a look.
 
 ## 1 - Post Process
@@ -90,7 +84,7 @@ Then from the number of neighbours that match the reference color we know if tha
 
 ![Outline](../images/simple-outline-post-process/outline.png)
 
-It worked great in our game because the color of the background is always the same (it's the key color we use to determine if the image should be transparent, like a greenscreen).
+It worked great in our game because the color of the background is always the same (it's the key color we use to determine if the image should be transparent).
 
 First we have to sample all neighbours
 
@@ -137,8 +131,6 @@ And finally we check the number of neighbours that turn out to be background pix
 
     ...
 ```
-
-## 3 - Conclusion
  
 If you have any question related to this tutorial you can message me directly [@tomdns_](https://twitter.com/tomdns_)
 
