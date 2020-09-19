@@ -15,6 +15,12 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+}
+
+.social_icons {
+    width: 25px;
+    filter: invert(53%) sepia(73%) saturate(1412%) hue-rotate(309deg) brightness(100%) contrast(102%);
 }
 
 #social_container {

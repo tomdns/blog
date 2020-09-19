@@ -92,17 +92,17 @@ function AddArticle(article) {
 
 <div class="header">
     <div>
-        <h2 id="thomas-denis---technical-artist">Thomas Denis - Technical Artist</h2>
+        <span id="header_title">Thomas Denis - Technical Artist</span>
     </div>
     <div id="social_container">
         <div>
             <a href="https://twitter.com/tomdns_" target="_blank">
-                <img src="images/icons/twitter.svg" width="30px" style="height:100%" />
+                <img src="images/icons/twitter.svg" class="social_icons" />
             </a>
         </div>
         <div>
             <a href="mailto:thomas-denis@hotmail.com" target="_blank">
-                <img src="images/icons/email.svg" width="30px" style="height:100%" />
+                <img src="images/icons/email.svg" class="social_icons" />
             </a>
         </div>
     </div>
