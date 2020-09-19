@@ -46,23 +46,23 @@ function ToggleTag(el, tag) {
         }
     }
 
-    var flag = 0;
-    for(const prop in tags)
-    {
-        if(tags[prop] == 1)
-        {
-            flag = 1;
-            return;
-        }
-    }
+    // var flag = 0;
+    // for(const prop in tags)
+    // {
+    //     if(tags[prop] == 1)
+    //     {
+    //         flag = 1;
+    //         return;
+    //     }
+    // }
 
-    if(flag == 0) 
-    {
-        for(const prop in tags)
-        {
-            ToggleTag(tagsElements[prop], prop);
-        }
-    }
+    // if(flag == 0) 
+    // {
+    //     for(const prop in tags)
+    //     {
+    //         ToggleTag(tagsElements[prop], prop);
+    //     }
+    // }
 }
 
 function AddArticle(article) {
