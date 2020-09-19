@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Devnotes | Compute Shader Game Of Life
-description: Devnotes
+title: Sand Game With Compute Shaders
+description: Breakdown
 ---
 
 ![Header](../images/compute-game-of-life/sandgame_unity.png)

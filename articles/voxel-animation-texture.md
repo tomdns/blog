@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Voxel Animation Textures
-description: Project
+description: Breakdown
 ---
 
 # Shader Project - Voxel Animation Textures

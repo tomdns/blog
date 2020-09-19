@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Sliced Mountains
-description: Tutorials
+description: Breakdown
 ---
 
 ![Header](../images/sliced-mountains/mountain.png)

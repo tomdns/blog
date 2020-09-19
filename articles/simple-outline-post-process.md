@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Simple Outline Post-Process
-description: Tutorials
+description: Breakdown
 ---
 
 ![Header](../images/simple-outline-post-process/header.png)

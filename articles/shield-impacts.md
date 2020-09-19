@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Shield Impacts
-description: Project
+description: Breakdown
 ---
 
 # Shader Project - Shield Impacts

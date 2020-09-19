@@ -132,7 +132,7 @@ AddArticle({
     tags:           ['tips']
 });
 AddArticle({
-    header:         'Shader Project - A Sand Game With Compute Shaders',
+    header:         'Shader Breakdown - A Sand Game With Compute Shaders',
     description:    'A version of the classic game running on the GPU',
     link:           'articles/compute-game-of-life.html',
     thumbnail:      'images/compute-game-of-life/trees.gif',
@@ -140,7 +140,7 @@ AddArticle({
     tags:           ['shaders', 'compute']
 });
 AddArticle({
-    header:         'Shader Tutorial - Simple Outline Post-Process',
+    header:         'Shader Breakdown - Simple Outline Post-Process',
     description:    'A specific pixel-perfect outline for Desktop Garden, our #LD46 jam entry',
     link:           'articles/simple-outline-post-process.html',
     thumbnail:      'images/simple-outline-post-process/header.png',
@@ -156,7 +156,7 @@ AddArticle({
     tags:           ['shaders', 'vfx']
 });
 AddArticle({
-    header:         'Shader Project - Voxel Animation Textures',
+    header:         'Shader Breakdown - Voxel Animation Textures',
     description:    'VATs for voxel simulations, from Houdini to Unity using Alembic',
     link:           'articles/voxel-animation-texture.html',
     thumbnail:      'images/voxel-animation-texture/waves.gif',
@@ -172,8 +172,8 @@ AddArticle({
     tags:           ['houdini']
 });
 AddArticle({
-    header:         'Shader Project - Shield Impacts',
-    description:    'An use case of sending an array of values to the shader',
+    header:         'Shader Breakdown - Shield Impacts',
+    description:    'Use case of sending arrays to the shader',
     link:           'articles/shield-impacts.html',
     thumbnail:      'images/shield-impacts/shield.gif',
     date:           'September 2019',
@@ -188,7 +188,7 @@ AddArticle({
     tags:           ['houdini']
 });
 AddArticle({
-    header:         'Shader Project - Hologram (RTVFX Sketch #18)',
+    header:         'Shader Breakdown - Hologram (RTVFX Sketch #18)',
     description:    'Project made for the 18th sketch edition on realtimevfx.com. GPU Particles, Compute & Geometry shaders',
     link:           'articles/sketch-hologram.html',
     thumbnail:      'images/sketch-hologram/hologram.gif',
