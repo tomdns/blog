@@ -104,7 +104,7 @@ function AddArticle(article) {
             <a href="mailto:thomas-denis@hotmail.com" target="_blank">
                 <img src="images/icons/email.svg" />
             </a>
-        <div>
+        </div>
     </div>
 </div>
 
