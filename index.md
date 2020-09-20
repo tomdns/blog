@@ -89,7 +89,7 @@ function AddArticle(article) {
 '</div>';
 
     template = template.replace('[THUMBNAIL]', article.thumbnail);
-    template = template.replace('[LINK]', article.link);
+    template = template.replace('[LINK]', article.link == '' ? 'javascript:void(0)' : article.link);
     template = template.replace('[HEADER]', article.header);
     template = template.replace('[DESCRIPTION]', article.description);
     template = template.replace('[DATE]', article.date);
@@ -146,6 +146,14 @@ function AddArticle(article) {
 
 <script type="text/javascript">
 AddArticle({
+    header:         'Shader Project - Boids With Compute Shaders',
+    description:    'Fish simulation running on the GPU and rendering with DrawMeshInstancedIndirect',
+    link:           '',
+    thumbnail:      'images/compute-boids/thumb.gif',
+    date:           'September 2020',
+    tags:           ['shaders', 'compute']
+});
+AddArticle({
     header:         'Unity Tips - Build Size And Assets Usage',
     description:    'Quick tip on how to spot what\'s taking up place in your project',
     link:           'articles/tips-build-size.html',
@@ -188,7 +196,7 @@ AddArticle({
 AddArticle({
     header:         'Houdini Project - Townscaper\'s grid',
     description:    'Quick attempt in Houdini to generate the grid from Townscaper by Oskar Stålberg',
-    link:           'javascript:void(0)',
+    link:           '',
     thumbnail:      'images/stalberg-grid/process.gif',
     date:           'November 2019',
     tags:           ['houdini']
@@ -220,7 +228,7 @@ AddArticle({
 AddArticle({
     header:         'Shader Project - Parallax Sphere',
     description:    'Parallax mapping without raymarching',
-    link:           'javascript:void(0)',
+    link:           '',
     thumbnail:      'images/parallax-sphere/sphere.gif',
     date:           'September 2018',
     tags:           ['shaders', 'vfx']
