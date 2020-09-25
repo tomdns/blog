@@ -10,7 +10,7 @@ description: Tips
 
 Quick tip on build sizes in Unity, and how to identify what's taking place in your project...
 
-Everytime you build your project, you can see in the Editor.log if you scroll down to the end a part named ***Build report*** containing the assets usage per category and a list of every asset used in the build sorted by size.
+Everytime you build your project, you can see in the Editor.log if you scroll down to the end the ***Build report*** containing the assets usage per category and a list of every asset used in the build sorted by size.
 
 ![Header](../images/tips-build-size/log.png)
 
