@@ -4,7 +4,7 @@ title: Shield Impacts
 description: Breakdown
 ---
 
-# Shader Project - Shield Impacts
+# Shader Breakdown - Shield Impacts
 
 ***
 
