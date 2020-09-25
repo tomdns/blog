@@ -24,6 +24,10 @@ We only need the time of impact so we can do *1 - saturate((_Time.y - t) / lengt
 
 This gives you a mask that you can use however you want.
 
+Here's a decomposition of the effect:
+
+![Process](../images/shield-impacts/process.png)
+
 If you have any question you can message me directly [@tomdns_](https://twitter.com/tomdns_)
 
 ***
