@@ -13,7 +13,7 @@ description: Breakdown
     <img src="../images/shield-impacts/bread.gif" width="250"/>
 </div>
 
-Small breakdown of the core ideas of the shader I showed on [twitter](https://twitter.com/tomdns_/status/1177389679815135233).
+Quick breakdown of the core ideas of the shader I showed on [twitter](https://twitter.com/tomdns_/status/1177389679815135233).
 
 Here whenever I detect a collision with the sphere I add the position to a Vector4 array, containing the time when it hit aswell in the w component.
 
