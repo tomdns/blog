@@ -66,6 +66,7 @@ span#header_title_sub {
 
 .card_disabled {
     filter: grayscale(1) opacity(.8);
+    pointer-events: none;
 }
 
 .card:hover {
