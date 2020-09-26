@@ -12,7 +12,7 @@ description: Breakdown
 
 Small experiment notes on making a sand game running in a Compute Shader...
 
-The main idea here is that I do the simulation in a RWStructuredBuffer instead of the RenderTexture itself, that way I can have more data than just one color per pixel. I send the buffer once at the start to the compute and then in the update each dispatch call pushes the simulation one step further. Besides the pixels buffer, I also send a RenderTexture, so that I can assign the modified pixels of the simulation. This RT is also sent to a material applied to a quad in the scene that just samples the texture in the shader.
+The main idea here is that I do the simulation in a RWStructuredBuffer instead of the RenderTexture itself, that way I can have more data than just one color per pixel. I send the buffer once at the start to the compute and then in the update each dispatch call pushes the simulation one step further. Besides the pixels buffer, I still send a RenderTexture, so that I can assign the modified pixels of the simulation. This RT is also sent to a material applied to a quad in the scene that just samples the texture in the shader.
 
 So each frame the compute is dispatched, the buffer gets modified, and the RenderTexture is written to with the content of the buffer.
 
