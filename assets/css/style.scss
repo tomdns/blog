@@ -64,6 +64,10 @@ span#header_title_sub {
     transition: .2s;
 }
 
+.card_disabled {
+    filter: grayscale(1) opacity(.8);
+}
+
 .card:hover {
     background-color: white;
 }

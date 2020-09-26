@@ -68,7 +68,7 @@ function ToggleTag(el, tag) {
 function AddArticle(article) {
     var template = 
 
-'<div class="card">'+
+'<div class="card [EXTRACLASS]">'+
 '    <div>'+
 '        <img src="[THUMBNAIL]" alt="image" class="card_preview" /> '+
 '    </div>'+
@@ -103,6 +103,11 @@ function AddArticle(article) {
     }
     
     template = template.replace('[TAGS]', tags);
+
+    var extraClass = "";
+    if(article['live'] !== undefined && !article['live']) extraClass = "card_disabled";
+
+    template = template.replace('[EXTRACLASS]', extraClass);
 
     document.getElementById("container").insertAdjacentHTML('beforeend', template);
 }
@@ -151,7 +156,8 @@ AddArticle({
     link:           '',
     thumbnail:      'images/compute-boids/thumb.gif',
     date:           'September 2020',
-    tags:           ['shaders', 'compute']
+    tags:           ['shaders', 'compute'],
+    live:           false
 });
 AddArticle({
     header:         'Unity Tips - Build Size And Assets Usage',
