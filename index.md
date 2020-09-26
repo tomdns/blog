@@ -156,8 +156,7 @@ AddArticle({
     link:           '',
     thumbnail:      'images/compute-boids/thumb.gif',
     date:           'September 2020',
-    tags:           ['shaders', 'compute'],
-    live:           false
+    tags:           ['shaders', 'compute']
 });
 AddArticle({
     header:         'Unity Tips - Build Size And Assets Usage',
