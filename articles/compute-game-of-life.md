@@ -12,9 +12,11 @@ description: Breakdown
 
 Small experiment notes on making a sand game running in a Compute Shader...
 
-Here I send a render texture to the compute that will contain the results of the simulation, I never read from it.
-I send a RWStructuredBuffer the size of my texture (width * height), so for each pixel I have a struct that contains whatever data I need to send. 
-Every frame the compute is dispatched, the buffer gets modified, and the RenderTexture is written to with the content of the buffer.
+The main idea here is that I do the simulation in a RWStructuredBuffer instead of the RenderTexture itself, that way I can have more data than just one color per pixel. I send the buffer once at the start to the compute and then in the update each dispatch call pushes the simulation one step further. Besides the pixels buffer, I also send a RenderTexture, so that I can assign the modified pixels of the simulation. This RT is also sent to a material applied to a quad in the scene that just samples the texture in the shader.
+
+So each frame the compute is dispatched, the buffer gets modified, and the RenderTexture is written to with the content of the buffer.
+
+Here's how the buffer is set up:
 
 ```c#
     public struct Pixel
@@ -36,17 +38,15 @@ Every frame the compute is dispatched, the buffer gets modified, and the RenderT
 
 The struct has to be matched in the compute exactly the same.
 
-Each frame I send the texture to the material, to the compute, and I dispatch the compute.
 Here's how its dispatched for a thread count of [8,8,1] (so it's simpler to write to the texture) in the *Update()*
 
 ```c#
     compute.Dispatch(updateKernel, width/8, height/8, 1);
 ```
 
-I also dispatch another kernel function (once) to set default values if I input a texture instead of a blank RT (see the Unity logo).
-I dispatch it at the start and it just sets my buffer block types to AIR or TREE based on the pixels color. 
+I also dispatch another kernel function (once) to set default values if I input a texture instead of a blank RT (see the Unity logo), it just sets my buffer block types to AIR or TREE based on the pixels color. 
 That means I have to set the pixelsBuffer to both kernels. No need to read back after dispatching the start kernel.
-So in my *Start()* function after creating the *pixelsBuffer*:
+See in my *Start()* function after creating the *pixelsBuffer*:
 
 ```c#
     compute.SetBuffer(startKernel, "_Pixels", pixelsBuffer);
@@ -60,7 +60,7 @@ It can make more complicated block types a pain to make but still, using basic r
 
 ![Types](../images/compute-game-of-life/sandgame.png)
 
-Here for the fire behaviour I used Conway's game of life, and it spreads to neighbour pixels if they're trees. This means in my TREE behaviour if any neighbour is a FIRE or a TREE_BURNING, it has a chance to become a TREE_BURNING aswell next iteration.
+Here for the fire behaviour I used Conway's game of life, and it spreads to neighbour pixels if they're trees. So in my TREE behaviour if any neighbour is a FIRE or a TREE_BURNING, it has a chance to become a TREE_BURNING aswell next iteration.
 
 ```c++
     if(state == TREE)
@@ -76,7 +76,7 @@ Here for the fire behaviour I used Conway's game of life, and it spreads to neig
     }
 ```
 
-And at last in the compute I also set the texture color according to the buffer pixels type, since as I said I'm only modifying the RWStructuredBuffer here, not the texture directly.
+Last step in the compute is to set the pixels to the RenderTexture, I just do a switch between the block types and set a color accordingly.
 
 You can see it in action [here](https://preview.redd.it/vzwvhd3oehf51.gif?format=mp4&s=db4d21f6946280f9a162aa0b1a0a86245a7bd38c)
 
