@@ -14,7 +14,7 @@ description: Breakdown
 
 ## Intro
 
-***Update: this should be a lot easier with the HeightField Terrace node, still have to try it though!***
+***Update: It might be better easier to use the Heightfield Terrace node.***
 
 Ludum Dare 44 is now over. It's been fun! Since quite a few people asked for it, here's a little breakdown of the islands in our game *Seaway*. You can see it in action [here](https://borderline.itch.io/seaway).
 
