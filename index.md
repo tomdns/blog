@@ -6,7 +6,7 @@ var tags =
     'vfx'           : 1,
     'houdini'       : 1,
     'compute'       : 1,
-    'tips'          : 0,
+    'tips'          : 1,
     'post-process'  : 1
 };
 
@@ -150,6 +150,7 @@ function AddArticle(article) {
 </div>
 
 <script type="text/javascript">
+
 AddArticle({
     header:         'Unity Tips - Build Size And Assets Usage',
     description:    'Quick tip on how to spot what\'s taking up place in your project',
