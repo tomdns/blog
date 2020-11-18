@@ -29,11 +29,11 @@ First take the distance between the hit position and the vertex position
 
 ![Distance](../images/shield-impacts/process_distance.png)
 
-Step the result, using our time of impact *t* value
+Step the distance, using our time of impact *t* value
 
 ![Distance](../images/shield-impacts/process_step.png)
 
-Step the result again, using *t - ringWidth*, substract both stepped values, and *saturate()*
+Step the distance again, using *t - ringWidth*, substract both stepped values, and *saturate()*
 
 ![Distance](../images/shield-impacts/process_ring.png)
 
