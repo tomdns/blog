@@ -223,12 +223,12 @@ AddArticle({
     date:           'November 2018',
     tags:           ['shaders', 'vfx', 'compute']
 });
-AddArticle({
-    header:         'Shader Project - Parallax Sphere',
-    description:    'Parallax mapping without raymarching',
-    link:           '',
-    thumbnail:      'images/parallax-sphere/sphere.gif',
-    date:           'September 2018',
-    tags:           ['shaders', 'vfx']
-});
+// AddArticle({
+//     header:         'Shader Project - Parallax Sphere',
+//     description:    'Parallax mapping without raymarching',
+//     link:           '',
+//     thumbnail:      'images/parallax-sphere/sphere.gif',
+//     date:           'September 2018',
+//     tags:           ['shaders', 'vfx']
+// });
 </script>
