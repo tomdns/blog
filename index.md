@@ -118,7 +118,7 @@ function AddArticle(article) {
     <div>
         <div>
             <span id="header_title">Thomas Denis</span>
-            <span id="header_title_sub">Technical Artist</span>
+            <span id="header_title_sub">tech art blog</span>
         </div>
     </div>
     <div id="social_container">

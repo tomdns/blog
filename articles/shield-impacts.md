@@ -23,7 +23,7 @@ hits.Add(new Vector4(hit.x, hit.y, hit.z, t));
 
 ```
 
-Then I send the list to the shader, and for each hit I take the distance from the hit position and the current vertex position. Then to make rings I do as follows:
+Then I send the list to the shader, and for each hit to make rings I do as follows:
 
 First take the distance between the hit position and the vertex position
 
