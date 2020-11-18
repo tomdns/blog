@@ -151,14 +151,6 @@ function AddArticle(article) {
 
 <script type="text/javascript">
 AddArticle({
-    header:         'Shader Project - Boids With Compute Shaders',
-    description:    'Fish simulation running on the GPU and rendering with DrawMeshInstancedIndirect',
-    link:           '',
-    thumbnail:      'images/compute-boids/thumb.gif',
-    date:           'September 2020',
-    tags:           ['shaders', 'compute']
-});
-AddArticle({
     header:         'Unity Tips - Build Size And Assets Usage',
     description:    'Quick tip on how to spot what\'s taking up place in your project',
     link:           'articles/tips-build-size.html',
@@ -176,7 +168,7 @@ AddArticle({
 });
 AddArticle({
     header:         'Shader Breakdown - Simple Outline Post-Process',
-    description:    'A specific pixel-perfect outline for Desktop Garden, our #LD46 jam entry',
+    description:    'Pixel-perfect outline for Desktop Garden, our #LD46 jam entry',
     link:           'articles/simple-outline-post-process.html',
     thumbnail:      'images/simple-outline-post-process/header.png',
     date:           'April 2020',

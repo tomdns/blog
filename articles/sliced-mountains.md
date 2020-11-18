@@ -18,7 +18,7 @@ description: Breakdown
 
 Ludum Dare 44 is now over. It's been fun! Since quite a few people asked for it, here's a little breakdown of the islands in our game *Seaway*. You can see it in action [here](https://borderline.itch.io/seaway).
 
-We wanted to recreate islands similar to the ones we find in *Godus*, in a more simplified version.
+We wanted to recreate islands similar to the ones we find in *Godus*, but simpler.
 
 ## 1 - Heightfield
 

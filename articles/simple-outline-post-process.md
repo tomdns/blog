@@ -8,7 +8,7 @@ description: Breakdown
 
 # Shader Breakdown - Simple Outline Post-Process
 
-Here's a little breakdown of the outline post-process we made for our Ludum Dare entry. You can see it live [here](https://borderline.itch.io/desktop-garden). We wanted an easy way to add contrast to the whole image and keep a good visibility no matter what the background is, let's have a look.
+Here's a little breakdown of the outline post-process we made for our Ludum Dare entry. You can see it live **[here](https://borderline.itch.io/desktop-garden)**.
 
 ## 1 - Post Process
 
