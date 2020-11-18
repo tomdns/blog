@@ -6,7 +6,7 @@ var tags =
     'vfx'           : 1,
     'houdini'       : 1,
     'compute'       : 1,
-    'tips'          : 1,
+    'tips'          : 0,
     'post-process'  : 1
 };
 
