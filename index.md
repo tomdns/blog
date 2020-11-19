@@ -69,8 +69,8 @@ function AddArticle(article) {
     var template = 
 
 '<div class="card [EXTRACLASS]">'+
-'    <div>'+
-'        <img src="[THUMBNAIL]" alt="image" class="card_preview" /> '+
+'    <div class="card_preview">'+
+'        <img src="[THUMBNAIL]" alt="image" /> '+
 '    </div>'+
 '    <div class="card_child">'+
 '        <div>'+
