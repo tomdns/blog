@@ -12,12 +12,10 @@ description: Breakdown
 
 Small experiment notes on making a sand game running in a Compute Shader...
 
-Here the simulation is done in a RWStructuredBuffer instead of a texture, that way I can have more data than just one color per pixel. I send the buffer once at the start to the compute and then in the update each dispatch call pushes the simulation one step further. Along the pixels buffer I also send a RenderTexture, that stores the result of the simulation. 
+Here the simulation is done in a StructuredBuffer instead of a texture, that way I can have more data than just one color per pixel. I send the buffer once in *Start()* to the compute shader, then in the update each dispatch call pushes the simulation one step further. I also send a RenderTexture that stores the result of the simulation. So each frame the compute is dispatched, the buffer gets modified and written to the RenderTexture.
 
-So each frame the compute is dispatched, the buffer gets modified and written to the RenderTexture.
-
-I also dispatch another kernel function (once) to set default values if I input a texture instead of a blank RT (see the Unity logo), it just sets my buffer elements type based on the pixels color. 
-That means I have to set the pixelsBuffer to both kernels. No need to read back after dispatching the start kernel.
+I also dispatch another kernel function (once) to set some values if I input a texture instead of a blank RT (see the Unity logo), it just sets the buffer elements type based on the pixels color. 
+That means the buffer needs to be sent to both kernels (start and update).
 
 The rules of the simulation are fairly simple, for each block type I describe what to do according to the direct neighbours to the current pixel. The tricky part is for example with sand you want to have a condition for the sand block to become air when falling and vice versa, since you can't modify neighbour pixels directly, you need to have both conditions. 
 It can make more complicated block types a pain to make but still, using basic rules you can have some really cool effects.
