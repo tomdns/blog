@@ -118,6 +118,8 @@ function AddArticle(article) {
 <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;700;800&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 
+<div class="header_background"></div>
+
 <div class="header">
     <div>
         <div>
@@ -138,8 +140,6 @@ function AddArticle(article) {
         </div>
     </div>
 </div>
-
-***
 
 <div id="tags_container">
 <span class="tag tag_shaders" onclick="ToggleTag(this, 'shaders')">shaders</span>
