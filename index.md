@@ -90,9 +90,7 @@ function AddArticle(article) {
 
     template = template.replace('[THUMBNAIL]', article.thumbnail);
 
-    var pattern = "[LINK]",
-    re = new RegExp(pattern, "g");
-    template = template.replace(re, article.link == '' ? 'javascript:void(0)' : article.link);
+    template = template.replace(/[LINK]/g, article.link == '' ? 'javascript:void(0)' : article.link);
     template = template.replace('[HEADER]', article.header);
     template = template.replace('[DESCRIPTION]', article.description);
     template = template.replace('[DATE]', article.date);
