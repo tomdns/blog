@@ -77,8 +77,8 @@ span#header_title_sub {
 .card_header {
     color: #ff6588;
     text-decoration: none;
-    font-weight: bold;
     font-family: 'Bitter';
+    font-size: 20px;
 }
 
 .image_container {
@@ -94,7 +94,7 @@ span#header_title_sub {
 }
 
 .card_child {
-    width: 50%;
+    width: 55%;
     margin: 5px;
     display: flex;
     flex-direction: column;
