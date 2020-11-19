@@ -114,6 +114,9 @@ function AddArticle(article) {
 
 </script>
 
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;700;800&display=swap" rel="stylesheet">
+
 <div class="header">
     <div>
         <div>
