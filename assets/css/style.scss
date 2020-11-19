@@ -74,6 +74,12 @@ span#header_title_sub {
     background-color: white;
 }
 
+.card_header {
+    color: #ff6588;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 .image_container {
     display: flex;
     flex-direction: row;
@@ -106,6 +112,16 @@ span#header_title_sub {
     margin-top: 5px;
     font-style: italic;
     font-size: small;
+}
+
+.card_readmore {
+    text-align: right;
+    margin-top: 5px;
+    font-size: small;
+    border: 2px solid #ff6588;
+    padding: 5px;
+    border-radius: 4px;
+    color: #ff6588;
 }
 
 .card_preview {

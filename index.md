@@ -74,15 +74,15 @@ function AddArticle(article) {
 '    </div>'+
 '    <div class="card_child">'+
 '        <div>'+
-'        <a href="[LINK]">[HEADER]</a><br>'+
+'        <a href="[LINK]" class="card_header">[HEADER]</a><br>'+
 '        [DESCRIPTION]'+
 '        </div>'+
 '        <div class="card_footer">'+
 '           <div class="card_tags">'+
 '           [TAGS]'+
 '           </div>'+
-'           <div class="card_date">'+
-'           [DATE]'+
+'           <div class="card_readmore">'+
+'           Read More'+
 '           </div>'+
 '        </div>'+
 '    </div>'+
