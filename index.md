@@ -90,8 +90,8 @@ function AddArticle(article) {
 
     template = template.replace('[THUMBNAIL]', article.thumbnail);
 
-    template = template.replace(['[LINK]', article.link == '' ? 'javascript:void(0)' : article.link);
-    template = template.replace(['[LINK]', article.link == '' ? 'javascript:void(0)' : article.link);
+    template = template.replace('[LINK]', article.link == '' ? 'javascript:void(0)' : article.link);
+    template = template.replace('[LINK]', article.link == '' ? 'javascript:void(0)' : article.link);
     template = template.replace('[HEADER]', article.header);
     template = template.replace('[DESCRIPTION]', article.description);
     template = template.replace('[DATE]', article.date);
