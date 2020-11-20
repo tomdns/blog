@@ -33,7 +33,7 @@ img {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .header_background {
@@ -144,11 +144,13 @@ span#header_title_sub {
 .card_readmore {
     text-align: right;
     margin-top: 5px;
-    font-size: small;
-    border: 2px solid $section-headings-color;
+    font-size: smaller;
+    border: 2px solid #C879FF;
     padding: 5px;
     border-radius: 4px;
+    font-weight: 500;
     color: $section-headings-color;
+    font-family: 'Roboto';
 }
 
 .card-readmore a {
