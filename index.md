@@ -81,8 +81,8 @@ function AddArticle(article) {
 '           <div class="card_tags">'+
 '           [TAGS]'+
 '           </div>'+
-'           <div class="card_readmore">'+
-'           <a href="[LINK]">Read More</a>'+
+'           <div>'+
+'           <a href="[LINK]" class="card_readmore">Read More</a>'+
 '           </div>'+
 '        </div>'+
 '    </div>'+

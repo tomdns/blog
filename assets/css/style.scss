@@ -75,9 +75,10 @@ span#header_title_sub {
     flex-direction: row;
     justify-content: space-between;
     padding: 20px;
-    margin-top: 10px;
-    border-bottom: 2px solid #eff0f1;
+    margin-top: 40px;
+    /* border-bottom: 2px solid #eff0f1; */
     transition: .2s;
+    box-shadow: 0 10px 20px #ececec;
 }
 
 .card_disabled {
@@ -92,8 +93,9 @@ span#header_title_sub {
 .card_header {
     color: #ff6588;
     text-decoration: none;
-    font-family: 'Bitter';
+    font-family: 'Roboto';
     font-size: 20px;
+    font-weight: 500;
 }
 
 .image_container {
@@ -145,7 +147,10 @@ span#header_title_sub {
 }
 
 .card_preview {
-    width: 250px;
+    width: 300px;
+    /* max-height: 200px; */
+    overflow: hidden;
+    margin: -20px;
 }
 
 #tags_container {
