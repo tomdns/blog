@@ -23,6 +23,11 @@ img {
     margin-right: auto;
 }
 
+.main-content img {
+    max-width: none;
+    max-height:200px;
+}
+
 .header {
     display: flex;
     flex-direction: row;
