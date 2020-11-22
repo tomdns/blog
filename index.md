@@ -124,9 +124,9 @@ function AddArticle(article) {
 
 <div class="header">
     <div>
-        <div>
+        <div style="vertical-align: middle;">
             <span id="header_title">Thomas Denis</span>
-            <span id="header_title_sub">tech art blog</span>
+            <span id="header_title_sub" style="color:#a9a9a9">tech art blog</span>
         </div>
     </div>
     <div id="social_container">
