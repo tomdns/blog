@@ -123,8 +123,8 @@ function AddArticle(article) {
 <div class="header_background"></div>
 
 <div class="header">
-    <div>
-        <div style="vertical-align: middle;">
+    <div style="vertical-align: middle;">
+        <div>
             <span id="header_title">Thomas Denis</span>
             <span id="header_title_sub" style="color:#a9a9a9">tech art blog</span>
         </div>
