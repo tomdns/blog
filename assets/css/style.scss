@@ -52,6 +52,7 @@ span#header_title {
     text-transform: uppercase;
     font-family: 'Roboto';
     font-weight: bold;
+    vertical-align: middle !important;
 }
 
 span#header_title_sub {
@@ -60,8 +61,11 @@ span#header_title_sub {
 }
 
 .social_icons {
-    width: 25px;
+    width: 30px;
     filter: invert(59%) sepia(53%) saturate(3580%) hue-rotate(230deg) brightness(102%) contrast(101%);
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 100px;
 }
 
 #social_container {
