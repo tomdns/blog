@@ -161,7 +161,7 @@ AddArticle({
     header:         'Unity Tips - Build Size And Assets Usage',
     description:    'Quick tip on how to spot what\'s taking up place in your project',
     link:           'articles/tips-build-size.html',
-    thumbnail:      'images/tips-build-size/log.png',
+    thumbnail:      'images/tips-build-size/thumb.png',
     date:           'September 2020',
     tags:           ['tips']
 });
@@ -169,7 +169,7 @@ AddArticle({
     header:         'Shader Breakdown - A Sand Game With Compute Shaders',
     description:    'A version of the classic game running on the GPU',
     link:           'articles/compute-game-of-life.html',
-    thumbnail:      'images/compute-game-of-life/trees.gif',
+    thumbnail:      'images/compute-game-of-life/thumb.gif',
     date:           'August 2020',
     tags:           ['shaders', 'compute']
 });
@@ -177,7 +177,7 @@ AddArticle({
     header:         'Shader Breakdown - Simple Outline Post-Process',
     description:    'Pixel-perfect outline for Desktop Garden, our #LD46 jam entry',
     link:           'articles/simple-outline-post-process.html',
-    thumbnail:      'images/simple-outline-post-process/header.png',
+    thumbnail:      'images/simple-outline-post-process/thumb.png',
     date:           'April 2020',
     tags:           ['shaders', 'post-process']
 });
@@ -185,7 +185,7 @@ AddArticle({
     header:         'Shader Project - Uber Shader VFX',
     description:    'Custom shader & inspector to toggle shader features easily',
     link:           'articles/uber-shader-vfx.html',
-    thumbnail:      'images/uber-shader-vfx/projectiles.gif',
+    thumbnail:      'images/uber-shader-vfx/thumb.gif',
     date:           'March 2020',
     tags:           ['shaders', 'vfx']
 });
@@ -193,7 +193,7 @@ AddArticle({
     header:         'Shader Breakdown - Voxel Animation Textures',
     description:    'VATs for voxel simulations, from Houdini to Unity using Alembic',
     link:           'articles/voxel-animation-texture.html',
-    thumbnail:      'images/voxel-animation-texture/waves.gif',
+    thumbnail:      'images/voxel-animation-texture/thumb.gif',
     date:           'December 2019',
     tags:           ['shaders', 'houdini', 'vfx']
 });
@@ -201,7 +201,7 @@ AddArticle({
     header:         'Houdini Project - Townscaper\'s grid',
     description:    'Quick attempt in Houdini to generate the grid from Townscaper by Oskar Stålberg',
     link:           '',
-    thumbnail:      'images/stalberg-grid/process.gif',
+    thumbnail:      'images/stalberg-grid/thumb.gif',
     date:           'November 2019',
     tags:           ['houdini']
 });
@@ -209,7 +209,7 @@ AddArticle({
     header:         'Shader Breakdown - Shield Impacts',
     description:    'Use case of sending arrays to the shader',
     link:           'articles/shield-impacts.html',
-    thumbnail:      'images/shield-impacts/shield.gif',
+    thumbnail:      'images/shield-impacts/thumb.gif',
     date:           'September 2019',
     tags:           ['shaders', 'vfx']
 });
@@ -217,7 +217,7 @@ AddArticle({
     header:         'Houdini Tutorial - Sliced Mountains',
     description:    'Learn how to generate Godus-inspired islands using heightfields in Houdini',
     link:           'articles/sliced-mountains.html',
-    thumbnail:      'images/sliced-mountains/mountain_final.png',
+    thumbnail:      'images/sliced-mountains/thumb.png',
     date:           'May 2019',
     tags:           ['houdini']
 });
@@ -225,7 +225,7 @@ AddArticle({
     header:         'Shader Breakdown - Hologram (RTVFX Sketch #18)',
     description:    'Project made for the 18th sketch edition on realtimevfx.com. GPU Particles, Compute & Geometry shaders',
     link:           'articles/sketch-hologram.html',
-    thumbnail:      'images/sketch-hologram/hologram.gif',
+    thumbnail:      'images/sketch-hologram/thumb.gif',
     date:           'November 2018',
     tags:           ['shaders', 'vfx', 'compute']
 });
