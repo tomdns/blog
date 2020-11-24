@@ -5,6 +5,10 @@ $section-headings-color: #C879FF;
 
 @import "{{ site.theme }}";
 
+.main-content {
+    max-width: 68rem;
+}
+
 body
 {
     padding: 0;
