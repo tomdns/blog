@@ -80,7 +80,7 @@ Also there's probably a better way to smooth the slices than using the Subdivide
 
 There's also the HeightField Terrace SOP to look into, but it might be harder to have a simple / lowpoly design.
 
-## 4 - Conclusion
+## 4 - Project Files
 
 You can download the project file [**here**](../sources/sliced_mountain.hiplc)
 
