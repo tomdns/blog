@@ -23,17 +23,17 @@ hits.Add(new Vector4(hit.x, hit.y, hit.z, t));
 
 ```
 
-Then I send the list to the shader, and for each hit to make rings I do as follows:
+Then I send the list to the shader, and loop through it. Then to make rings, for each hit position I do as follows:
 
 First take the distance between the hit position and the vertex position
 
 ![Distance](../images/shield-impacts/process_distance.png)
 
-Step the distance, using our time of impact *t* value
+Step the distance, using the time of impact *t* value
 
 ![Distance](../images/shield-impacts/process_step.png)
 
-Step the distance again, using *t - ringWidth*, substract both stepped values, and *saturate()*
+Step the distance again using *t - ringWidth* then substract both stepped values, and *saturate()* the result
 
 ![Distance](../images/shield-impacts/process_ring.png)
 

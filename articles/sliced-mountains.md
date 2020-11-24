@@ -14,8 +14,6 @@ description: Breakdown
 
 ## Intro
 
-***Update: It might be better easier to use the Heightfield Terrace node.***
-
 Ludum Dare 44 is now over. It's been fun! Since quite a few people asked for it, here's a little breakdown of the islands in our game *Seaway*. You can see it in action [here](https://borderline.itch.io/seaway).
 
 We wanted to recreate islands similar to the ones we find in *Godus*, but simpler.
@@ -79,6 +77,8 @@ That's it!
 This small tutorial only covered the generation of the base mesh. The heightfield SOPS can generate a lot of interesting data you could use for example to scatter props in coherent ways.
 
 Also there's probably a better way to smooth the slices than using the Subdivide SOP, I tried several methods but none of them worked really the way I wanted to, so feel free to send me what you come up with!
+
+There's also the HeightField Terrace SOP to look into, but it might be harder to have a simple / lowpoly design.
 
 ## 4 - Conclusion
 
