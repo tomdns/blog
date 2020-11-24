@@ -140,6 +140,11 @@ function AddArticle(article) {
                 <img src="images/icons/email.svg" class="social_icons" />
             </a>
         </div>
+        <div>
+            <a href="https://tomdns.itch.io/" target="_blank">
+                <img src="images/icons/itch-io.svg" class="social_icons" />
+            </a>
+        </div>
     </div>
 </div>
 
