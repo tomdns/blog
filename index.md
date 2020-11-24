@@ -207,7 +207,7 @@ AddArticle({
 });
 AddArticle({
     header:         'Shader Breakdown - Shield Impacts',
-    description:    'Use case of sending arrays to the shader',
+    description:    'Pew Pew Pew',
     link:           'articles/shield-impacts.html',
     thumbnail:      'images/shield-impacts/thumb.gif',
     date:           'September 2019',
