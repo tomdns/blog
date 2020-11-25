@@ -163,7 +163,7 @@ function AddArticle(article) {
 <script type="text/javascript">
 
 AddArticle({
-    header:         'Nodevember 2020 with Amplify Shaders',
+    header:         'Nodevember 2020 with Amplify Shader Editor',
     description:    'Shaders made without textures',
     link:           'articles/nodevember-2020.html',
     thumbnail:      'images/nodevember-2020/thumb.gif',
