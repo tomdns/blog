@@ -163,6 +163,14 @@ function AddArticle(article) {
 <script type="text/javascript">
 
 AddArticle({
+    header:         'Nodevember 2020 with Amplify Shaders',
+    description:    'Shaders made without textures',
+    link:           'articles/nodevember-2020.html',
+    thumbnail:      'images/nodevember-2020/thumb.png',
+    date:           'November 2020',
+    tags:           ['shaders']
+});
+AddArticle({
     header:         'Unity Tips - Build Size And Assets Usage',
     description:    'Quick tip on how to spot what\'s taking up place in your project',
     link:           'articles/tips-build-size.html',
