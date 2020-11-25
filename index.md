@@ -166,7 +166,7 @@ AddArticle({
     header:         'Nodevember 2020 with Amplify Shaders',
     description:    'Shaders made without textures',
     link:           'articles/nodevember-2020.html',
-    thumbnail:      'images/nodevember-2020/thumb.png',
+    thumbnail:      'images/nodevember-2020/thumb.gif',
     date:           'November 2020',
     tags:           ['shaders']
 });
