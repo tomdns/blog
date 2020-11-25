@@ -8,7 +8,7 @@ description: Breakdown
 
 ***
 
-Here's my 2020 nodevember adventure to practice a little more Amplify. These were all made in 1-2 hours, starting from a highly subdivided sphere. I added the shader files but keep in mind the graphs were not cleaned at all.
+Here's my 2020 nodevember adventure to practice a little more Amplify. These were all made in 1-2 hours, starting from a highly subdivided sphere and without any texture inputs. I added the shader files but keep in mind the graphs were not cleaned at all.
 
 <div class="card">
     <div>
