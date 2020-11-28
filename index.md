@@ -104,7 +104,11 @@ function AddArticle(article) {
     if(article.tags)
     {
         for(var i = 0; i < article.tags.length; i++) {
-            tags += '<span class="tag ' + ("tag_" + article.tags[i]) + '">'+ article.tags[i] +'</span>';
+           // tags += '<span class="tag_circle"></span>';
+            tags += '<div class="tag ' + ("tag_" + article.tags[i]) + '">';
+            tags += '<div class="tag_circle"></div>';
+            tags += article.tags[i];
+            tags += '</div>';
         }
     }
     
@@ -153,12 +157,30 @@ function AddArticle(article) {
 </div>
 
 <div id="tags_container">
-<span class="tag tag_shaders" onclick="ToggleTag(this, 'shaders')">shaders</span>
-<span class="tag tag_vfx" onclick="ToggleTag(this, 'vfx')">vfx</span>
-<span class="tag tag_houdini" onclick="ToggleTag(this, 'houdini')">houdini</span>
-<span class="tag tag_compute" onclick="ToggleTag(this, 'compute')">compute</span>
-<span class="tag tag_tips" onclick="ToggleTag(this, 'tips')">tips</span>
-<span class="tag tag_post-process" onclick="ToggleTag(this, 'post-process')">post-process</span>
+<div class="tag tag_shaders" onclick="ToggleTag(this, 'shaders')">
+    <div class="tag_circle"></div>
+    shaders
+</div>
+<div class="tag tag_vfx" onclick="ToggleTag(this, 'vfx')">
+    <div class="tag_circle"></div>
+    vfx
+</div>
+<div class="tag tag_houdini" onclick="ToggleTag(this, 'houdini')">
+    <div class="tag_circle"></div>
+    houdini
+</div>
+<div class="tag tag_compute" onclick="ToggleTag(this, 'compute')">
+    <div class="tag_circle"></div>
+    compute
+</div>
+<div class="tag tag_tips" onclick="ToggleTag(this, 'tips')">
+    <div class="tag_circle"></div>
+    tips
+</div>
+<div class="tag tag_post-process" onclick="ToggleTag(this, 'post-process')">
+    <div class="tag_circle"></div>
+    post-process
+</div>
 </div>
 
 <div id="container">
