@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+
+    {% if site.google_analytics %}
+      <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '{{ site.google_analytics }}');
+      </script>
+    {% endif %}
+    <meta charset="UTF-8">
+
+{% seo %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    
+    <main id="content" class="main-content" role="main">
+        
+    <div class="header_background"></div>
+    <div class="header">
+        <div style="vertical-align: middle;">
+            <div>
+                <span id="header_title">Thomas Denis</span>
+                <!-- <span id="header_title_sub" style="color:#a9a9a9">tech art blog</span> -->
+            </div>
+        </div>
+        <div class="category_container">
+            <a href="/index.html" class="category_item" id="work">work</a>
+            <a href="/blog.html" class="category_item" id="blog">blog</a>
+            <a href="/about.html" class="category_item" id="about">about</a>
+            <a href="/contact.html" class="category_item" id="contact">contact</a>
+        </div>
+        <div id="social_container">
+            <div>
+                <a href="https://twitter.com/tomdns_" target="_blank">
+                    <img src="images/icons/twitter.svg" class="social_icons" />
+                </a>
+            </div>
+            <div>
+                <a href="mailto:thomas-denis@hotmail.com" target="_blank">
+                    <img src="images/icons/email.svg" class="social_icons" />
+                </a>
+            </div>
+            <div>
+                <a href="https://tomdns.itch.io/" target="_blank">
+                    <img src="images/icons/itch-io.svg" class="social_icons" />
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+      {{ content }}
+    </main>
+  </body>
+</html>

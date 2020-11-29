@@ -87,4 +87,4 @@ You can check the timelapses for each day on my twitter [**here**](https://twitt
 
 ***
 
-[back](../)
+[back](/blog.html)
