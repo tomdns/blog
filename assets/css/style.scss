@@ -41,6 +41,11 @@ img {
     margin-top: 0 !important;
 }
 
+.work-item:hover {
+    width: 300px;
+    max-width: 300px;
+}
+
 .category_container {
     //margin-right: 15px;
     display: flex;
