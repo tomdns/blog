@@ -24,7 +24,7 @@ document.getElementById("work").classList.add("category_item_selected");
 </div> -->
 <div class="work_item">
     <div>
-        <img src="images/shield-impacts/shield.gif"/>
+        <img src="images/work/shield.gif"/>
     </div>
 </div>
 <div class="work_item">
