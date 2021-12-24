@@ -22,7 +22,7 @@ You can see the work in progress on the RTVFX thread [here](https://realtimevfx.
 
 And the final result:
 
-![Final](https://i.imgur.com/dezSdme.gif)
+![Final](../images/sketch-hologram/hologram_finish.gif)
 
 If you have any question you can message me directly [@tomdns_](https://twitter.com/tomdns_)
 

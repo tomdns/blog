@@ -41,6 +41,16 @@ Here _ToggleHit.x contains the toggle state, and _ToggleHit.y the tab state.
 
 The MaterialPropertyDrawer of the toggle also handles setting the shader keywords, _FEATURE_HITFLASH in this case.
 
+***
+
+## 2021 Update
+
+So I ended up continuing working on this, carrying it through projects and refining it every time. It now works a bit differently -- when I open the material inspector in *OnEnable()* I build up a list of every material property that exist, and their categories from the shader properties names, containing their foldout / toggle states. They all get saved in *SessionState*, which is kind of like *EditorPrefs/PlayerPrefs*, except that it only lives during the Unity session. Meaning that when I restart Unity the foldout states are not preserved. This is fine, I don't need it to remember which foldouts were open after quitting the engine, but for the toggle states ( which add / remove shader keywords ) I simply look up the existing shader keywords and set the toggles values based on that, also in the *OnEnable()* function.
+
+I also took some time to make it prettier :)
+
+![Shader](../images/uber-shader-vfx/shaderV2.png)
+
 If you have any question you can message me directly [@tomdns_](https://twitter.com/tomdns_)
 
 * * *
