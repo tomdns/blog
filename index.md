@@ -27,8 +27,8 @@ function AddVideo(path) {
     AddVideo("images/work/gpuparticles_plexus.mp4");
     AddVideo("images/work/vfx_trails.mp4");
     AddVideo("images/work/gpuparticles_comet.mp4");
+    AddVideo("images/work/shockwave2.mp4");
     AddVideo("images/work/shield.mp4");
-    AddVideo("images/work/shockwave.mp4");
     AddVideo("images/work/vfx_aura.mp4");
     AddVideo("images/work/projectiles.mp4");
     AddVideo("images/work/breached.mp4");

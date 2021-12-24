@@ -79,16 +79,16 @@ function AddArticle(article) {
 '    <div class="card_child">'+
 '        <div>'+
 '        <a href="[LINK]" class="card_header">[HEADER]</a><br>'+
-// '        [DESCRIPTION]'+
+'        [DESCRIPTION]'+
 '        </div>'+
-'        <div class="card_footer">'+
-'           <div class="card_tags">'+
-'           [TAGS]'+
-'           </div>'+
-'           <div>'+
-'           <a href="[LINK]" class="card_readmore">Read More</a>'+
-'           </div>'+
-'        </div>'+
+// '        <div class="card_footer">'+
+// '           <div class="card_tags">'+
+// '           [TAGS]'+
+// '           </div>'+
+// '           <div>'+
+// '           <a href="[LINK]" class="card_readmore">Read More</a>'+
+// '           </div>'+
+// '        </div>'+
 '    </div>'+
 '</div>';
 
@@ -137,28 +137,20 @@ function AddArticle(article) {
 document.getElementById("blog").classList.add("category_item_selected");
 
 AddArticle({
-    header:         'Nodevember 2020 with Amplify Shader Editor',
-    description:    'Shaders made without textures',
-    link:           'articles/nodevember-2020.html',
-    thumbnail:      'images/nodevember-2020/thumb.gif',
-    date:           'November 2020',
-    tags:           ['shaders']
+    header:         'Shader Breakdown - Shield Impacts',
+    description:    'Pew Pew Pew',
+    link:           'articles/shield-impacts.html',
+    thumbnail:      'images/shield-impacts/thumb.gif',
+    date:           'September 2019',
+    tags:           ['shaders', 'vfx']
 });
 AddArticle({
-    header:         'Unity Tips - Build Size And Assets Usage',
-    description:    'Quick tip on how to spot what\'s taking up place in your project',
-    link:           'articles/tips-build-size.html',
-    thumbnail:      'images/tips-build-size/thumb.png',
-    date:           'September 2020',
-    tags:           ['tips']
-});
-AddArticle({
-    header:         'Shader Breakdown - A Sand Game With Compute Shaders',
-    description:    'A version of the classic game running on the GPU',
-    link:           'articles/compute-game-of-life.html',
-    thumbnail:      'images/compute-game-of-life/thumb.gif',
-    date:           'August 2020',
-    tags:           ['shaders', 'compute']
+    header:         'Houdini Tutorial - Sliced Mountains',
+    description:    'Godus-inspired islands in Houdini',
+    link:           'articles/sliced-mountains.html',
+    thumbnail:      'images/sliced-mountains/thumb.png',
+    date:           'May 2019',
+    tags:           ['houdini']
 });
 AddArticle({
     header:         'Shader Breakdown - Simple Outline Post-Process',
@@ -169,12 +161,28 @@ AddArticle({
     tags:           ['shaders', 'post-process']
 });
 AddArticle({
+    header:         'Nodevember 2020 with Amplify Shader Editor',
+    description:    'Shaders made without textures',
+    link:           'articles/nodevember-2020.html',
+    thumbnail:      'images/nodevember-2020/thumb.gif',
+    date:           'November 2020',
+    tags:           ['shaders']
+});
+AddArticle({
     header:         'Shader Project - Uber Shader VFX',
     description:    'Custom shader & inspector to toggle shader features easily',
     link:           'articles/uber-shader-vfx.html',
     thumbnail:      'images/uber-shader-vfx/thumb.gif',
     date:           'March 2020',
     tags:           ['shaders', 'vfx']
+});
+AddArticle({
+    header:         'Shader Breakdown - Sand Game With Compute Shaders',
+    description:    'The classic game running on the GPU',
+    link:           'articles/compute-game-of-life.html',
+    thumbnail:      'images/compute-game-of-life/thumb.gif',
+    date:           'August 2020',
+    tags:           ['shaders', 'compute']
 });
 AddArticle({
     header:         'Shader Breakdown - Voxel Animation Textures',
@@ -193,28 +201,20 @@ AddArticle({
     tags:           ['houdini']
 });*/
 AddArticle({
-    header:         'Shader Breakdown - Shield Impacts',
-    description:    'Pew Pew Pew',
-    link:           'articles/shield-impacts.html',
-    thumbnail:      'images/shield-impacts/thumb.gif',
-    date:           'September 2019',
-    tags:           ['shaders', 'vfx']
-});
-AddArticle({
-    header:         'Houdini Tutorial - Sliced Mountains',
-    description:    'Godus-inspired islands using heightfields in Houdini',
-    link:           'articles/sliced-mountains.html',
-    thumbnail:      'images/sliced-mountains/thumb.png',
-    date:           'May 2019',
-    tags:           ['houdini']
-});
-AddArticle({
     header:         'Shader Breakdown - Hologram (RTVFX Sketch #18)',
     description:    'GPU Particles, Compute & Geometry shaders',
     link:           'articles/sketch-hologram.html',
     thumbnail:      'images/sketch-hologram/thumb.gif',
     date:           'November 2018',
     tags:           ['shaders', 'vfx', 'compute']
+});
+AddArticle({
+    header:         'Unity Tips - Build Size And Assets Usage',
+    description:    'Quick tip on how to spot what\'s taking up place in your project',
+    link:           'articles/tips-build-size.html',
+    thumbnail:      'images/tips-build-size/thumb.png',
+    date:           'September 2020',
+    tags:           ['tips']
 });
 // AddArticle({
 //     header:         'Shader Project - Parallax Sphere',

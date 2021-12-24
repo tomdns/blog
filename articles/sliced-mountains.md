@@ -14,9 +14,8 @@ description: Breakdown
 
 ## Intro
 
-Ludum Dare 44 is now over. It's been fun! Since quite a few people asked for it, here's a little breakdown of the islands in our game *Seaway*. You can see it in action [here](https://borderline.itch.io/seaway).
-
-We wanted to recreate islands similar to the ones we find in *Godus*, but simpler.
+This is a small breakdown of the island generation in my LD44 entry. See it live [here](https://borderline.itch.io/seaway).
+I wanted to have a simpler version of the islands seen in Godus.
 
 ## 1 - Heightfield
 
@@ -31,7 +30,7 @@ To get points from all of this we first need to convert the heightfield to polyg
 ![](../images/sliced-mountains/mountain_network.png)
 
 Clipping the ground usually messes up our object position, we can reset it easily with some vex.
-Append a **Point Wrangle** and add the following code:
+Append a **Point Wrangle** node and add the following code:
 
 ```c#
 @P -= getbbox_center(0);
@@ -54,9 +53,9 @@ We can now work on each layer independently. Here's how I reconstructed the slic
 
 ![](../images/sliced-mountains/mountain_loop_network.png)
 
-First, a **Connect Adjacent Pieces** set to *Adjacent Points* goes through all the points and creates connexions with all their neighbours within a certain radius. Here I set the search radius to something like 4, it depends of what shape you want to have.
+First, a **Connect Adjacent Pieces** node set to *Adjacent Points* goes through all the points and creates connexions with all their neighbours within a certain radius. Here I set the search radius to something like 4, it depends of what shape you want to have.
 
-Then a **Triangulate 2D** creates a mesh from the generated connexions. You can set the *2D Positions* to *Select Projection Plane* and leave the default settings. It makes sure every layer is remeshed in the same direction. This resets our layer's position though so we need to put it back to its original height. Simply get the current point *height* attribute and assign it to the current point Y position.
+Then a **Triangulate 2D** node creates a mesh from the generated connexions. You can set the *2D Positions* to *Select Projection Plane* and leave the default settings. It makes sure every layer is remeshed in the same direction. This resets our layer's position though so we need to put it back to its original height. Simply get the current point *height* attribute and assign it to the current point Y position.
 
 ```c#
 @P.y = i@height;
@@ -64,7 +63,7 @@ Then a **Triangulate 2D** creates a mesh from the generated connexions. You can 
 
 The **Divide** SOP is used to clean up the geometry. Untick *Convex Polygons* and tick *Remove Shared Edges* so that we're left with only one primitive from the previous triangulated mess. Follow that with a **Facet** to remove the inline points.
 
-Then you can simply do a **PolyExtrude** and only output the sides, subdivide it, and put the caps back with a **PolyFill**.
+Then you can simply do a **PolyExtrude** and only output the sides, subdivide it, and put the caps back with a **PolyFill** node.
 
 Finally you can add a color node set to *Ramp from Attribute* or *Random from Attribute* and use the *height* to drive it.
 
