@@ -44,7 +44,7 @@ Then take the *max()* of the resulting value and the previous one in the loop to
 In my case I use *smoothstep* instead of *step* to have a smoother transition of values instead of either 0 or 1, but step is easier to explain.
 
 The *t* value is used to drive the step/smoothstep of the distances, meaning a bigger *t* will make the ring travel further.
-We only need the time of impact so we can do *1 - saturate((_Time.y - t) / length)*, meaning that at the time of impact *t = _Time.y* (ring is stepped at 0), and as _Time.y goes up *t* will naturally go up to 1 maximum, capped by the saturate function that clamps the value between 0 and 1. Each ring also gets multiplied by its *t* value, so that as it travels it also fades to black.
+We only need the time of impact so we can do *1 - saturate(_Time.y - t)*, meaning that at the time of impact *t = _Time.y* (ring is stepped at 0), and as _Time.y goes up *t* will naturally go up to 1 maximum, capped by the saturate function that clamps the value between 0 and 1. Each ring also gets multiplied by its *t* value, so that as it travels it also fades to black.
 
 Here's some sample code
 
@@ -52,7 +52,7 @@ Here's some sample code
     float mask = 0;
     for(uint i = 0; i < HIT_COUNT; i++)
     {
-        float t = 1.0 - saturate((_Time.y - _HitPosition[i].w) / _HitLength);
+        float t = 1.0 - saturate(_Time.y - _HitPosition[i].w);
 
         float d0 = distance(vertex, _HitPosition[i].xyz);
         float d1 = step(t, d0);
