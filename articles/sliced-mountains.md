@@ -87,4 +87,4 @@ If you have any question related to this tutorial you can message me directly [@
 
 * * *
 
-[back](/blog.html)
+[back](../blog.html)

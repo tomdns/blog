@@ -27,4 +27,4 @@ If you have any question you can message me directly [@tomdns_](https://twitter.
 
 * * *
 
-[back](/blog.html)
+[back](../blog.html)
