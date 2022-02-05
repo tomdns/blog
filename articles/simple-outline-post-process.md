@@ -1,12 +1,15 @@
 ---
-layout: default
-title: Simple Outline Post-Process
-description: Breakdown
+layout: article
+title: 📏 Shader Breakdown - Simple Outline Post-Process
+description: Pixel-perfect outline for Desktop Garden
+thumbnail: ../images/simple-outline-post-process/thumb.png
+banner: ../images/simple-outline-post-process/header.png
+tags: [shaders, post-process]
+date: 2019-07-01
+last_update: 2019-07-01
 ---
 
-![Header](../images/simple-outline-post-process/header.png)
-
-# Shader Breakdown - Simple Outline Post-Process
+## Introduction
 
 Here's a little breakdown of the outline post-process we made for our Ludum Dare entry. You can see it live **[here](https://borderline.itch.io/desktop-garden)**.
 

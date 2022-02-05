@@ -1,14 +1,13 @@
 ---
-layout: default
-title: Sand Game With Compute Shaders
-description: Breakdown
+layout: article
+title: 🏖️ Sand Game with Compute Shaders
+description: The classic game running on the GPU
+thumbnail: ../images/compute-game-of-life/thumb.gif
+banner: ../images/compute-game-of-life/sandgame_unity.png
+tags: [shaders, compute]
+date: 2020-08-01
+last_update: 2020-08-01
 ---
-
-![Header](../images/compute-game-of-life/sandgame_unity.png)
-
-# Shader Project - Sand Game With Compute Shaders
-
-* * *
 
 Small experiment notes on making a sand game running in a Compute Shader...
 

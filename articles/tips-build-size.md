@@ -1,12 +1,12 @@
 ---
-layout: default
-title: Unity Build Size And Assets Usage
-description: Tips
+layout: article
+title: ⚖️ Unity Tips - Build Size And Assets Usage
+description: Quick tip on how to spot what\'s taking up place in your project
+thumbnail: ../images/tips-build-size/thumb.png
+tags: [tips]
+date: 2020-09-01
+last_update: 2020-09-01
 ---
-
-# Unity Tips - Build Size And Assets Usage
-
-***
 
 Quick tip on build sizes in Unity, and how to identify what's taking place in your project...
 

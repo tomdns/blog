@@ -1,18 +1,17 @@
 ---
-layout: default
-title: Sliced Mountains
-description: Breakdown
+layout: article
+title: 🌋 Houdini Tutorial - Sliced Mountains
+description: Godus-inspired islands in Houdini
+thumbnail: ../images/sliced-mountains/thumb.png
+banner: ../images/sliced-mountains/mountain.png
+tags: [houdini]
+date: 2019-07-01
+last_update: 2019-07-01
 ---
-
-![Header](../images/sliced-mountains/mountain.png)
-
-# Houdini Tutorial - Sliced Mountains
 
 > Learn how to generate Godus-inspired islands using heightfields in Houdini.
 
-* * *
-
-## Intro
+## Introduction
 
 This is a small breakdown of the island generation in my LD44 entry. See it live **[here](https://borderline.itch.io/seaway)**.
 I wanted to have a simpler version of the islands seen in Godus.

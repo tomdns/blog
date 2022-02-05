@@ -1,14 +1,13 @@
 ---
-layout: default
-title: Sketch 18 - Hologram
-description: Project
+layout: article
+title: 🤖 Shader Breakdown - Hologram (RTVFX Sketch 18)
+description: GPU Particles, Compute & Geometry shaders
+thumbnail: ../images/sketch-hologram/thumb.gif
+banner: ../images/sketch-hologram/hologram_turnaround.gif
+tags: [shaders, compute, vfx]
+date: 2018-11-01
+last_update: 2018-11-01
 ---
-
-![Header](../images/sketch-hologram/hologram_turnaround.gif)
-
-# Shader Project - Hologram (RTVFX Sketch #18 entry)
-
-***
 
 Small notes of my entry for RTVFX's Sketch #18 (ended up 2nd!)
 

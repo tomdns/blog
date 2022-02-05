@@ -1,17 +1,13 @@
 ---
-layout: default
-title: Voxel Animation Textures
-description: Breakdown
+layout: article
+title: 🧊 Shader Breakdown - Voxel Animation Textures
+description: VATs for voxel simulations, from Houdini to Unity using Alembic
+thumbnail: ../images/voxel-animation-texture/thumb.gif
+banner: ../images/voxel-animation-texture/explosion.gif
+tags: [shaders, houdini, vfx]
+date: 2019-12-01
+last_update: 2019-12-01
 ---
-
-# Shader Project - Voxel Animation Textures
-
-***
-
-<div class="image_container">
-    <img src="../images/voxel-animation-texture/explosion.gif" width="250"/>
-    <img src="../images/voxel-animation-texture/waves.gif" height="308"/>
-</div>
 
 Small experiment to have VATs to animate voxel simulations inside Unity, made in collaboration with [Pascal Beeckmans](https://www.behance.net/paqwak).
 We exported a point cloud from Houdini (.abc file) that contains all the possible cells of the animation, like the bounding box of the whole simulation. Then a texture that contains for each frame of the animation the state of each voxel cell, and another one that contains the temperature or w/e data we want, so we can color the voxels in engine.

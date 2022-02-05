@@ -22,6 +22,18 @@
   </head>
   <body>
     <main id="content" class="main-content" role="main">
+        
+        <h1>{{page.title}}</h1>
+
+        <div class="banner_date">
+            <div>📆 Published {{ page.date | timeago }}</div>
+            <div>✏️ Last updated {{ page.last_update | timeago }}</div>
+        </div>
+
+        <div class="banner">
+            <img src="{{page.banner}}"/>
+        </div>
+
       {{ content }}
     </main>
   </body>

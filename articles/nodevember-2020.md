@@ -1,12 +1,12 @@
 ---
-layout: default
-title: Nodevember 2020
-description: Breakdown
+layout: article
+title: 📜 Nodevember 2020 with Amplify Shader Editor
+description: Shaders made without textures
+thumbnail: ../images/nodevember-2020/thumb.gif
+tags: [shaders]
+date: 2020-11-01
+last_update: 2020-11-01
 ---
-
-# Nodevember 2020 with Amplify Shader Editor
-
-***
 
 Here's my 2020 nodevember adventure to practice a little more Amplify. These were all made in 1-2 hours, starting from a highly subdivided sphere and without any texture inputs. I added the shader files but keep in mind the graphs were not cleaned at all. [**Download them all here**](../sources/nodevember2020.unitypackage)
 

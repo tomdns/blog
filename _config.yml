@@ -1,3 +1,6 @@
 theme: jekyll-theme-cayman
 google_analytics: UA-215871520-1
 exclude: [local]
+plugins:
+  - jekyll-timeago
+  - jekyll-last-modified-at

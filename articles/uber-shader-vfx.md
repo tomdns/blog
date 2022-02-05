@@ -1,12 +1,12 @@
 ---
-layout: default
-title: Uber Shader VFX
-description: Project
+layout: article
+title: 📜 Shader Project - Uber Shader VFX
+description: Custom shader & inspector to toggle shader features
+thumbnail: ../images/uber-shader-vfx/thumb.gif
+tags: [shaders, vfx]
+date: 2020-03-01
+last_update: 2021-03-01
 ---
-
-# Shader Project - Uber Shader VFX
-
-***
 
 Recently I made a Uber shader specially for VFX, I made a few tests to try it out.
 

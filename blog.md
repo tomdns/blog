@@ -1,5 +1,7 @@
 ---
 layout: home
+pages:
+- shield-impacts
 ---
 
 <script>
@@ -81,16 +83,20 @@ function AddArticle(article) {
 '    </div>'+
 '    <div class="card_preview">'+
 '        <img src="[THUMBNAIL]" alt="image" /> '+
+'        <p>[DATE]</p> '+
 '    </div>'+
 '</div>';
 
     template = template.replace('[THUMBNAIL]', article.thumbnail);
-
-    template = template.replace('[LINK]', article.link == '' ? 'javascript:void(0)' : article.link);
     template = template.replace('[LINK]', article.link == '' ? 'javascript:void(0)' : article.link);
     template = template.replace('[HEADER]', article.header);
     template = template.replace('[DESCRIPTION]', article.description);
-    template = template.replace('[DATE]', article.date);
+
+    var date = '';
+    
+    console.log(date);
+    
+    template = template.replace('[DATE]', date);
 
     var tags = "";
     if(article.tags)
@@ -119,101 +125,24 @@ function AddArticle(article) {
 <span class="tag tag_compute" onclick="ToggleTag(this, 'compute')">compute</span>
 <span class="tag tag_tips" onclick="ToggleTag(this, 'tips')">tips</span>
 <span class="tag tag_post-process" onclick="ToggleTag(this, 'post-process')">post-process</span>
-</div> -->
+</div>  -->
 
 <div id="container">
+
+{% assign subpage = site.pages | sort: 'last_update' | reverse | where_exp: "item", "item.url contains 'articles'" %}
+{% for item in subpage %}
+    <div class="card">
+        <div class="card_child">
+            <div>
+                <a href="{{item.url}}" class="card_header">{{item.title}}</a><br>
+                {{item.description}}
+            </div>
+            <div class="card_date">Last updated {{ item.last_update | item.date | timeago }}</div>
+        </div>
+        <div class="card_preview">
+            <img src="{{item.thumbnail}}" alt="image" />
+        </div>
+    </div>
+{% endfor %}
+
 </div>
-
-<script type="text/javascript">
-
-document.getElementById("blog").classList.add("category_item_selected");
-
-AddArticle({
-    header:         '🔫 Shader Breakdown - Shield Impacts',
-    description:    'Pew Pew Pew',
-    link:           'articles/shield-impacts.html',
-    thumbnail:      'images/shield-impacts/thumb.gif',
-    date:           'September 2019',
-    tags:           ['shaders', 'vfx']
-});
-AddArticle({
-    header:         '🌋 Houdini Tutorial - Sliced Mountains',
-    description:    'Godus-inspired islands in Houdini',
-    link:           'articles/sliced-mountains.html',
-    thumbnail:      'images/sliced-mountains/thumb.png',
-    date:           'May 2019',
-    tags:           ['houdini']
-});
-AddArticle({
-    header:         '📏 Shader Breakdown - Simple Outline Post-Process',
-    description:    'Pixel-perfect outline for Desktop Garden',
-    link:           'articles/simple-outline-post-process.html',
-    thumbnail:      'images/simple-outline-post-process/thumb.png',
-    date:           'April 2020',
-    tags:           ['shaders', 'post-process']
-});
-AddArticle({
-    header:         '📜 Nodevember 2020 with Amplify Shader Editor',
-    description:    'Shaders made without textures',
-    link:           'articles/nodevember-2020.html',
-    thumbnail:      'images/nodevember-2020/thumb.gif',
-    date:           'November 2020',
-    tags:           ['shaders']
-});
-AddArticle({
-    header:         '📜 Shader Project - Uber Shader VFX',
-    description:    'Custom shader & inspector to toggle shader features easily',
-    link:           'articles/uber-shader-vfx.html',
-    thumbnail:      'images/uber-shader-vfx/thumb.gif',
-    date:           'March 2020',
-    tags:           ['shaders', 'vfx']
-});
-AddArticle({
-    header:         '🏖️ Shader Breakdown - Sand Game With Compute Shaders',
-    description:    'The classic game running on the GPU',
-    link:           'articles/compute-game-of-life.html',
-    thumbnail:      'images/compute-game-of-life/thumb.gif',
-    date:           'August 2020',
-    tags:           ['shaders', 'compute']
-});
-AddArticle({
-    header:         '🧊 Shader Breakdown - Voxel Animation Textures',
-    description:    'VATs for voxel simulations, from Houdini to Unity using Alembic',
-    link:           'articles/voxel-animation-texture.html',
-    thumbnail:      'images/voxel-animation-texture/thumb.gif',
-    date:           'December 2019',
-    tags:           ['shaders', 'houdini', 'vfx']
-});
-/*AddArticle({
-    header:         'Houdini Project - Townscaper\'s grid',
-    description:    'Quick attempt in Houdini to generate the grid from Townscaper by Oskar Stålberg',
-    link:           '',
-    thumbnail:      'images/stalberg-grid/thumb.gif',
-    date:           'November 2019',
-    tags:           ['houdini']
-});*/
-AddArticle({
-    header:         '🤖 Shader Breakdown - Hologram (RTVFX Sketch #18)',
-    description:    'GPU Particles, Compute & Geometry shaders',
-    link:           'articles/sketch-hologram.html',
-    thumbnail:      'images/sketch-hologram/thumb.gif',
-    date:           'November 2018',
-    tags:           ['shaders', 'vfx', 'compute']
-});
-AddArticle({
-    header:         '⚖️ Unity Tips - Build Size And Assets Usage',
-    description:    'Quick tip on how to spot what\'s taking up place in your project',
-    link:           'articles/tips-build-size.html',
-    thumbnail:      'images/tips-build-size/thumb.png',
-    date:           'September 2020',
-    tags:           ['tips']
-});
-// AddArticle({
-//     header:         'Shader Project - Parallax Sphere',
-//     description:    'Parallax mapping without raymarching',
-//     link:           '',
-//     thumbnail:      'images/parallax-sphere/sphere.gif',
-//     date:           'September 2018',
-//     tags:           ['shaders', 'vfx']
-// });
-</script>
