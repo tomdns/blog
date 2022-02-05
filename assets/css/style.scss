@@ -20,7 +20,7 @@ body
     padding: 0;
     margin: 0;
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.5;
     overflow:scroll;
 }
@@ -121,7 +121,7 @@ img {
 
 .card_preview img {
     max-width: none;
-    max-height:200px;
+    max-height:100px;
 }
 
 .header {
@@ -183,19 +183,15 @@ span#header_title_sub {
     justify-content: space-between;
     /* padding: 20px; */
     margin-top: 30px;
-    /* border-bottom: 2px solid #eff0f1; */
+    border-bottom: 1px dashed #3e3b3b;
     transition: .2s;
+    /* border-bottom: 2px solid; */
+    padding-bottom: 30px;
 }
 
 .card_disabled {
     filter: grayscale(1) opacity(.8);
     pointer-events: none;
-}
-
-.card:hover {
-    // background-color: white;
-    transform: translateY(-2px);
-    // box-shadow: 0 5px 30px #ececec;
 }
 
 .card_header {

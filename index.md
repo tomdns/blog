@@ -18,7 +18,9 @@ function AddVideo(path) {
 }
 </script>
 
-<div id="grid" class="work_grid">
+<div id="container">
+    <div id="grid" class="work_grid">
+    </div>
 </div>
 
 <script type="text/javascript">

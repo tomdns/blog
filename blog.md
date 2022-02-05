@@ -73,22 +73,14 @@ function AddArticle(article) {
     var template = 
 
 '<div class="card [EXTRACLASS]">'+
-'    <div class="card_preview">'+
-'        <img src="[THUMBNAIL]" alt="image" /> '+
-'    </div>'+
 '    <div class="card_child">'+
 '        <div>'+
 '        <a href="[LINK]" class="card_header">[HEADER]</a><br>'+
 '        [DESCRIPTION]'+
 '        </div>'+
-// '        <div class="card_footer">'+
-// '           <div class="card_tags">'+
-// '           [TAGS]'+
-// '           </div>'+
-// '           <div>'+
-// '           <a href="[LINK]" class="card_readmore">Read More</a>'+
-// '           </div>'+
-// '        </div>'+
+'    </div>'+
+'    <div class="card_preview">'+
+'        <img src="[THUMBNAIL]" alt="image" /> '+
 '    </div>'+
 '</div>';
 
@@ -137,7 +129,7 @@ function AddArticle(article) {
 document.getElementById("blog").classList.add("category_item_selected");
 
 AddArticle({
-    header:         'Shader Breakdown - Shield Impacts',
+    header:         '🔫 Shader Breakdown - Shield Impacts',
     description:    'Pew Pew Pew',
     link:           'articles/shield-impacts.html',
     thumbnail:      'images/shield-impacts/thumb.gif',
@@ -145,7 +137,7 @@ AddArticle({
     tags:           ['shaders', 'vfx']
 });
 AddArticle({
-    header:         'Houdini Tutorial - Sliced Mountains',
+    header:         '🌋 Houdini Tutorial - Sliced Mountains',
     description:    'Godus-inspired islands in Houdini',
     link:           'articles/sliced-mountains.html',
     thumbnail:      'images/sliced-mountains/thumb.png',
@@ -153,15 +145,15 @@ AddArticle({
     tags:           ['houdini']
 });
 AddArticle({
-    header:         'Shader Breakdown - Simple Outline Post-Process',
-    description:    'Pixel-perfect outline for Desktop Garden, our #LD46 jam entry',
+    header:         '📏 Shader Breakdown - Simple Outline Post-Process',
+    description:    'Pixel-perfect outline for Desktop Garden',
     link:           'articles/simple-outline-post-process.html',
     thumbnail:      'images/simple-outline-post-process/thumb.png',
     date:           'April 2020',
     tags:           ['shaders', 'post-process']
 });
 AddArticle({
-    header:         'Nodevember 2020 with Amplify Shader Editor',
+    header:         '📜 Nodevember 2020 with Amplify Shader Editor',
     description:    'Shaders made without textures',
     link:           'articles/nodevember-2020.html',
     thumbnail:      'images/nodevember-2020/thumb.gif',
@@ -169,7 +161,7 @@ AddArticle({
     tags:           ['shaders']
 });
 AddArticle({
-    header:         'Shader Project - Uber Shader VFX',
+    header:         '📜 Shader Project - Uber Shader VFX',
     description:    'Custom shader & inspector to toggle shader features easily',
     link:           'articles/uber-shader-vfx.html',
     thumbnail:      'images/uber-shader-vfx/thumb.gif',
@@ -177,7 +169,7 @@ AddArticle({
     tags:           ['shaders', 'vfx']
 });
 AddArticle({
-    header:         'Shader Breakdown - Sand Game With Compute Shaders',
+    header:         '🏖️ Shader Breakdown - Sand Game With Compute Shaders',
     description:    'The classic game running on the GPU',
     link:           'articles/compute-game-of-life.html',
     thumbnail:      'images/compute-game-of-life/thumb.gif',
@@ -185,7 +177,7 @@ AddArticle({
     tags:           ['shaders', 'compute']
 });
 AddArticle({
-    header:         'Shader Breakdown - Voxel Animation Textures',
+    header:         '🧊 Shader Breakdown - Voxel Animation Textures',
     description:    'VATs for voxel simulations, from Houdini to Unity using Alembic',
     link:           'articles/voxel-animation-texture.html',
     thumbnail:      'images/voxel-animation-texture/thumb.gif',
@@ -201,7 +193,7 @@ AddArticle({
     tags:           ['houdini']
 });*/
 AddArticle({
-    header:         'Shader Breakdown - Hologram (RTVFX Sketch #18)',
+    header:         '🤖 Shader Breakdown - Hologram (RTVFX Sketch #18)',
     description:    'GPU Particles, Compute & Geometry shaders',
     link:           'articles/sketch-hologram.html',
     thumbnail:      'images/sketch-hologram/thumb.gif',
@@ -209,7 +201,7 @@ AddArticle({
     tags:           ['shaders', 'vfx', 'compute']
 });
 AddArticle({
-    header:         'Unity Tips - Build Size And Assets Usage',
+    header:         '⚖️ Unity Tips - Build Size And Assets Usage',
     description:    'Quick tip on how to spot what\'s taking up place in your project',
     link:           'articles/tips-build-size.html',
     thumbnail:      'images/tips-build-size/thumb.png',

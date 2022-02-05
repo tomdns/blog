@@ -14,7 +14,7 @@ description: Breakdown
 
 ## Intro
 
-This is a small breakdown of the island generation in my LD44 entry. See it live [here](https://borderline.itch.io/seaway).
+This is a small breakdown of the island generation in my LD44 entry. See it live **[here](https://borderline.itch.io/seaway)**.
 I wanted to have a simpler version of the islands seen in Godus.
 
 ## 1 - Heightfield
