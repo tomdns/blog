@@ -11,8 +11,13 @@ last_update: 2022-02-05
 
 ## Introduction
 
-Here's a small breakdown of a shader I showed on twitter. The goal was to have multiple points of impact in the shader itself, and to be able to work on any mesh that already had UVs.
+Here's a small breakdown of a shader I showed on [twitter](https://twitter.com/tomdns_/status/1177389679815135233). The goal was to have multiple points of impact in the shader itself, and to be able to work on any mesh that already had UVs.
 Note that it was made in Unity but the shader logic can apply anywhere, only the hit detection part will be different.
+
+<div class="image_container">
+    <img src="../images/shield-impacts/shield.gif" width="230"/>
+    <img src="../images/shield-impacts/shield_v2.gif" width="230"/>
+</div>
 
 ## Hit Detection
 
@@ -86,5 +91,7 @@ Here's what the loop looks like so far
 Then I use this mask as alpha, multiplying it by a tiling hexagonal texture and a bunch of panning noises. Went a bit overkill with a GrabPass distortion as well. Here's a small decomposition of the effect
 
 ![Process](../images/shield-impacts/process.png) 
+
+***
 
 [back](../blog.html)

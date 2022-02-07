@@ -3,9 +3,6 @@
 
 @import "{{ site.theme }}";
 
-.main-content {
-}
-
 video
 {
     margin: 0;
@@ -19,7 +16,7 @@ body
 {
     padding: 0;
     margin: 0;
-    font-family: 'Literata', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     line-height: 1.5;
     overflow:scroll;
@@ -35,14 +32,32 @@ img {
 h1
 {
     text-align: center;
-    font-weight: 700 !important;
-    font-family: 'Roboto', sans-serif;
+    font-weight: 600 !important;
+    font-family: 'Montserrat', sans-serif;
     margin-top: 40px !important;
 }
 
 h2
 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+#article-content
+{
+    margin-top: 30px;
+}
+
+#article-content a 
+{
+    text-decoration: none;
+    color: $section-headings-color;
+}
+
+#article-content a:hover
+{
+    color: $section-headings-color;
+    border-bottom: 2px solid $section-headings-color;
 }
 
 .banner_date
@@ -247,6 +262,27 @@ span#header_title_sub {
     align-items: center;
 }
 
+em
+{
+    z-index: 0;
+    position: relative;
+    // border-radius: 10px;
+    padding-left: 2px;
+    padding-right: 2px;
+    color: $body-text-color-lighter;
+}
+
+em::before {
+    background-color: $body-text-highlight;
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 100%;
+    z-index: -1;
+    bottom: 0;
+    transform: translate(-3px, 3px);
+  }
+
 .image_container img {
     margin-left: 10px;
     margin-right: 10px;
@@ -259,7 +295,6 @@ span#header_title_sub {
     flex-direction: column;
     justify-content: space-around;
 
-    color: grey;
 }
 
 .card_footer {

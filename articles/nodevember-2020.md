@@ -8,7 +8,15 @@ date: 2020-11-01
 last_update: 2020-11-01
 ---
 
-Here's my 2020 nodevember adventure to practice a little more Amplify. These were all made in 1-2 hours, starting from a highly subdivided sphere and without any texture inputs. I added the shader files but keep in mind the graphs were not cleaned at all. [**Download them all here**](../sources/nodevember2020.unitypackage)
+## Introduction
+
+Here's my 2020 nodevember adventure to practice Amplify a bit more. The goal is simple: one shader everyday, no texture or any external resources, everything has to be generated in the shader itself. 
+
+These were all made in 1-2 hours, starting from a highly subdivided sphere. 
+
+## Shaders
+
+Every daily session was recorded, you can watch them [**here**](https://twitter.com/tomdns_/status/1323107803838488576)
 
 <div class="grid">
 <div class="grid_item">
@@ -83,7 +91,9 @@ Here's my 2020 nodevember adventure to practice a little more Amplify. These wer
 
 </div>
 
-You can check the timelapses for each day on my twitter [**here**](https://twitter.com/tomdns_/status/1323107803838488576)
+## Project Files
+
+I added the shader files if you don't mind rushed node spaghetti. [**Download them all here**](../sources/nodevember2020.unitypackage)
 
 ***
 

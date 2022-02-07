@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Literata:wght@300;400;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@600;700;800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800;900&display=swap');
 
 @mixin large {
   @media screen and (min-width: #{$large-breakpoint}) {
@@ -228,7 +228,7 @@ a {
     font-size: 0.9rem;
     color: $code-text-color;
     background-color: $code-bg-color;
-    border-radius: 0.3rem;
+    //border-radius: 0.3rem;
   }
 
   pre {
@@ -240,7 +240,7 @@ a {
     word-wrap: normal;
     background-color: $code-bg-color;
     border: solid 1px $border-color;
-    border-radius: 0.3rem;
+    //border-radius: 0.3rem;
 
     > code {
       padding: 0;
@@ -269,7 +269,7 @@ a {
     overflow: auto;
     font-size: 0.9rem;
     line-height: 1.45;
-    border-radius: 0.3rem;
+    //border-radius: 0.3rem;
     -webkit-overflow-scrolling: touch;
   }
 

@@ -1,6 +1,6 @@
 ---
 layout: article
-title: 🤖 Shader Breakdown - Hologram (RTVFX Sketch 18)
+title: 🤖 Hologram Shader Breakdown (RTVFX Sketch 18)
 description: GPU Particles, Compute & Geometry shaders
 thumbnail: ../images/sketch-hologram/thumb.gif
 banner: ../images/sketch-hologram/hologram_turnaround.gif
@@ -9,11 +9,19 @@ date: 2018-11-01
 last_update: 2018-11-01
 ---
 
-Small notes of my entry for RTVFX's Sketch #18 (ended up 2nd!)
+## Introduction
+
+Here are some notes on my entry for the 18th RTVFX Sketch (ended up 2nd! 🥈)
+The theme was hologram.
+
+## Breakdown
 
 The particles were made with a custom GPU particles system, using compute shaders to update them and geometry shaders for rendering.
 
-It renders the particles buffer using *Graphics.DrawProcedural* (with *MeshTopology.Points*) and in the point material itself I recreate the geometry using GS. In this case for each point I create small line strips (using LineStreams), typically one for the particle itself, and then some so it connects to the cylinder around, to the projectors building the hologram etc.
+In the geometry shader for each point in the buffer I create a bunch of new line strips (using *LineStreams*) that are offsetted a bit randomly to give this blurry/fuzzy look.
+Some of them connect the vertices to the "cylinder", which is faked by clamping the x and z position of each line end vertex.
+
+The particles buffer is rendered using *Graphics.DrawProcedural* (with *MeshTopology.Points*).
 
 I made it work for SkinnedMeshRenderers aswell, by baking the mesh each frame and sending the vertices to the compute shader (with *SkinnedMeshRenderer.BakeMesh()*)
 
@@ -23,8 +31,6 @@ And the final result:
 
 ![Final](../images/sketch-hologram/hologram_finish.gif)
 
-If you have any question you can message me directly [@tomdns_](https://twitter.com/tomdns_)
-
-* * *
+***
 
 [back](../blog.html)

@@ -1,9 +1,9 @@
 ---
 layout: article
-title: 📏 Shader Breakdown - Simple Outline Post-Process
+title: 📏 Simple Outline Post-Process Breakdown
 description: Pixel-perfect outline for Desktop Garden
 thumbnail: ../images/simple-outline-post-process/thumb.png
-banner: ../images/simple-outline-post-process/header.png
+banner: ../images/simple-outline-post-process/banner.png
 tags: [shaders, post-process]
 date: 2019-07-01
 last_update: 2019-07-01
@@ -11,9 +11,9 @@ last_update: 2019-07-01
 
 ## Introduction
 
-Here's a little breakdown of the outline post-process we made for our Ludum Dare entry. You can see it live **[here](https://borderline.itch.io/desktop-garden)**.
+Here's a little breakdown of the outline post-process I made in [Desktop Garden](https://borderline.itch.io/desktop-garden) for the 46th Ludum Dare.
 
-## 1 - Post Process
+## Post Process
 
 The post-process setup is fairly basic, a regular blit on the main camera, using a material with the outline shader.
 
@@ -29,7 +29,7 @@ public class PostProcess : MonoBehaviour
 }
 ```
 
-Now everytime we render a frame, it'll send the main texture to the *material* before displaying it on the screen. Meaning that we can manipulate the texture however we want in the shader.
+Now everytime we render a frame, it'll send the main texture to the material before displaying it on the screen. Meaning that we can manipulate the texture however we want in the shader.
 A simple shader that fetches the main texture could look like this:
 
 ```c++
@@ -79,13 +79,11 @@ Shader "PostProcess/Outline"
 }
 ```
 
-## 2 - Outline Shader
+## Outline Shader
 
 The outline shader works this way:
 for each pixel on the screen, we look at the direct neighbours of this pixel (top bottom left right), and compare their colors against another one (the background color in our case). 
 Then from the number of neighbours that match the reference color we know if that pixel is part of the outline or not.
-
-![Outline](../images/simple-outline-post-process/outline.png)
 
 It worked great in our game because the color of the background is always the same (it's the key color we use to determine if the image should be transparent).
 
@@ -107,7 +105,7 @@ fixed4 frag (v2f i) : SV_Target
 
 *_MainTex_TexelSize* in this case gives us the size of a pixel on screen ( 1 / Screen size ), since our texture takes up the whole screen.
 
-Then we need to check if each color equals our background color, in this case I just take the distance between the two and check if its smaller than some value (simply taking the distance isn't the most accurate, but it worked alright in this case).
+Then we need to check if each color equals our background color, in this case I just take the distance between the two and check if its smaller than a threshold (taking the distances to compare colors isn't really accurate, but it worked alright for my case).
 
 ```c++
     ...
@@ -134,9 +132,7 @@ And finally we check the number of neighbours that turn out to be background pix
 
     ...
 ```
- 
-If you have any question related to this tutorial you can message me directly [@tomdns_](https://twitter.com/tomdns_)
 
-* * *
+***
 
 [back](../blog.html)
