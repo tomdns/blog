@@ -4,7 +4,7 @@ title: 🏖️ Sand Game with Compute Shaders
 description: The classic game running on the GPU
 thumbnail: ../images/compute-game-of-life/thumb.gif
 banner: ../images/compute-game-of-life/banner.png
-tags: [shaders, compute]
+tags: [shaders]
 date: 2020-08-01
 last_update: 2020-08-01
 ---

@@ -4,7 +4,7 @@ title: 🤖 Hologram Shader Breakdown (RTVFX Sketch 18)
 description: GPU Particles, Compute & Geometry shaders
 thumbnail: ../images/sketch-hologram/thumb.gif
 banner: ../images/sketch-hologram/hologram_turnaround.gif
-tags: [shaders, compute, vfx]
+tags: [shaders, vfx]
 date: 2018-11-01
 last_update: 2018-11-01
 ---

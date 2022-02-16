@@ -1,7 +1,5 @@
 ---
 layout: home
-pages:
-- shield-impacts
 ---
 
 <script>
@@ -11,21 +9,24 @@ var tags =
     'shaders'       : 1,
     'vfx'           : 1,
     'houdini'       : 1,
-    'compute'       : 1,
     'tips'          : 1,
     'post-process'  : 1
 };
 
-var tagsElements = {};
+function ToggleAll() {
+    for(var key in tags)
+    {
+        tags[key] = 1;
+    }  
 
-function ToggleTag(el, tag) {
-    tagsElements[tag] = el;
-    tags[tag] = 1 - tags[tag];
-
-    if(tags[tag] == 0)
-    el.classList.remove('tag_' + tag);
-    else
-    el.classList.add('tag_' + tag);
+    var elements = document.getElementsByClassName("tag");
+    for(var j = 0; j < elements.length; j++)
+    {
+        if(!elements[j].classList.contains('tag_selected'))
+        {
+            elements[j].classList.add('tag_selected');
+        }
+    }
 
     var els = document.getElementsByClassName("card");
     for(var i = 0; i < els.length; i++)
@@ -51,81 +52,83 @@ function ToggleTag(el, tag) {
             els[i].style.display = '';
         }
     }
-
-    // var flag = 0;
-    // for(const prop in tags)
-    // {
-    //     if(tags[prop] == 1)
-    //     {
-    //         flag = 1;
-    //         return;
-    //     }
-    // }
-
-    // if(flag == 0) 
-    // {
-    //     for(const prop in tags)
-    //     {
-    //         ToggleTag(tagsElements[prop], prop);
-    //     }
-    // }
 }
 
-function AddArticle(article) {
-    var template = 
+function ToggleTag(el, tag) {
 
-'<div class="card [EXTRACLASS]">'+
-'    <div class="card_child">'+
-'        <div>'+
-'        <a href="[LINK]" class="card_header">[HEADER]</a><br>'+
-'        [DESCRIPTION]'+
-'        </div>'+
-'    </div>'+
-'    <div class="card_preview">'+
-'        <img src="[THUMBNAIL]" alt="image" /> '+
-'        <p>[DATE]</p> '+
-'    </div>'+
-'</div>';
-
-    template = template.replace('[THUMBNAIL]', article.thumbnail);
-    template = template.replace('[LINK]', article.link == '' ? 'javascript:void(0)' : article.link);
-    template = template.replace('[HEADER]', article.header);
-    template = template.replace('[DESCRIPTION]', article.description);
-
-    var date = '';
-    
-    console.log(date);
-    
-    template = template.replace('[DATE]', date);
-
-    var tags = "";
-    if(article.tags)
+    for(var key in tags)
     {
-        for(var i = 0; i < article.tags.length; i++) {
-            tags += '<span class="tag ' + ("tag_" + article.tags[i]) + '">'+ article.tags[i] +'</span>';
+        tags[key] = 0;
+    }  
+
+    var elements = document.getElementsByClassName("tag");
+    for(var j = 0; j < elements.length; j++)
+    {
+        for(var i = elements[j].classList.length - 1; i >= 0; i--) 
+        {
+            if(elements[j].classList[i] == 'tag_selected') 
+            {
+                elements[j].classList.remove(elements[j].classList[i]);
+            }
         }
     }
-    
-    template = template.replace('[TAGS]', tags);
 
-    var extraClass = "";
-    if(article['live'] !== undefined && !article['live']) extraClass = "card_disabled";
+    tags[tag] = 1;
+    el.classList.add('tag_selected');
+    // else
+    // {
+    //     tags[tag] = 1 - tags[tag];
 
-    template = template.replace('[EXTRACLASS]', extraClass);
+    //     if(tags[tag] == 0)
+    //         el.classList.remove('tag_selected');
+    //     else
+    //     {
+    //         el.classList.add('tag_selected');
+    //     }
+    // }
 
-    document.getElementById("container").insertAdjacentHTML('beforeend', template);
+    var els = document.getElementsByClassName("card");
+    for(var i = 0; i < els.length; i++)
+    {
+        var children = els[i].getElementsByTagName("span");
+        var hide = true;
+        for(var j = 0; j < children.length; j++)
+        {
+            if(tags[children[j].innerHTML] == 1)
+            hide = false;
+        }
+
+        if(hide) 
+        {
+            els[i].style.visibility = 'hidden';
+            els[i].style.opacity = '0';
+            els[i].style.display = 'none';
+        }
+        else
+        {
+            els[i].style.visibility = 'visible';
+            els[i].style.opacity = '1';
+            els[i].style.display = '';
+        }
+    }
 }
 
 </script>
 
-<!-- <div id="tags_container">
-<span class="tag tag_shaders" onclick="ToggleTag(this, 'shaders')">shaders</span>
-<span class="tag tag_vfx" onclick="ToggleTag(this, 'vfx')">vfx</span>
-<span class="tag tag_houdini" onclick="ToggleTag(this, 'houdini')">houdini</span>
-<span class="tag tag_compute" onclick="ToggleTag(this, 'compute')">compute</span>
-<span class="tag tag_tips" onclick="ToggleTag(this, 'tips')">tips</span>
-<span class="tag tag_post-process" onclick="ToggleTag(this, 'post-process')">post-process</span>
-</div>  -->
+<div id="menu_container">
+    <div id="tags_container">
+        <span class="tag tag_selected" onclick="ToggleTag(this, 'shaders')">shaders</span>
+        <span class="tag tag_selected" onclick="ToggleTag(this, 'vfx')">vfx</span>
+        <span class="tag tag_selected" onclick="ToggleTag(this, 'houdini')">houdini</span>
+        <span class="tag tag_selected" onclick="ToggleTag(this, 'tips')">tips</span>
+        <span class="tag tag_selected" onclick="ToggleTag(this, 'post-process')">post-process</span> 
+        <span class="tag tag_selected" onclick="ToggleAll()">x</span>
+    </div>  
+    <div>
+        <input id="search" type="text" placeholder="Search article..." name="search">
+    </div> 
+</div>  
+
 
 <div id="container">
 
@@ -134,10 +137,14 @@ function AddArticle(article) {
     <div class="card">
         <div class="card_child">
             <div>
-                <a href="{{item.url}}" class="card_header">{{item.title}}</a><br>
-                {{item.description}}
+                <a href="{{item.url}}" class="card_header">{{item.title}}</a>
+                {% for tag in item.tags %}
+                    <span class="tag_article">{{tag}}</span>  
+                {% endfor %}
+            </div>  
+            <div class="card_date">
+                🗓 {{ item.last_update | item.date | timeago }}
             </div>
-            <div class="card_date">Last updated {{ item.last_update | item.date | timeago }}</div>
         </div>
         <div class="card_preview">
             <img src="{{item.thumbnail}}" alt="image" />
@@ -146,3 +153,42 @@ function AddArticle(article) {
 {% endfor %}
 
 </div>
+
+<script>
+
+var els = document.getElementsByClassName("card");
+var titles = document.getElementsByClassName("card_header");
+setInterval(function() { 
+    let val = document.getElementById("search").value;
+    for(var i = 0; i < els.length; i++)
+    {
+        var children = els[i].getElementsByTagName("span");
+        var hide = true;
+        for(var j = 0; j < children.length; j++)
+        {
+            if(tags[children[j].innerHTML] == 1)
+            hide = false;
+        }
+
+        if(val != '')
+        if(!titles[i].innerHTML.toLowerCase().includes(val.toLowerCase())) 
+        {
+            hide = true;
+        }
+
+        if(hide) 
+        {
+            els[i].style.visibility = 'hidden';
+            els[i].style.opacity = '0';
+            els[i].style.display = 'none';
+        }
+        else
+        {
+            els[i].style.visibility = 'visible';
+            els[i].style.opacity = '1';
+            els[i].style.display = '';
+        }
+    }
+
+}, 100);
+</script>

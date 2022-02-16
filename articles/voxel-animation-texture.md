@@ -1,7 +1,7 @@
 ---
 layout: article
 title: 🧊 Voxel Animation Textures Breakdown
-description: VATs for voxel simulations, from Houdini to Unity using Alembic
+description: VATs for voxel simulations from Houdini
 thumbnail: ../images/voxel-animation-texture/thumb.gif
 banner: ../images/voxel-animation-texture/banner.png
 tags: [shaders, houdini, vfx]
