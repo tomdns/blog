@@ -62,7 +62,7 @@ After generating the base island I also extract the top polygons (by grouping th
 
 <img src="../images/dicegarden-breakdown/islands_grass.PNG" width="400"/>
 
-<a name="Grass"></a>
+<br/><a name="Grass"></a>
 
 ## Grass
 
@@ -80,7 +80,7 @@ From the top slice I extracted earlier we instantiate a bunch of copies with a s
 
 Seems like a lot of polygons but it's still way less that if we had polys for each grass blade at this density. The technique has some drawbacks though and tend to break as the view point gets closer to the ground.
 
-<a name="Portals"></a>
+<br/><a name="Portals"></a>
 
 ## Portals
 
@@ -92,7 +92,7 @@ Portals are made using a Labs tree generator. I added a few attributes to the le
     <img src="../images/dicegarden-breakdown/portals_final.PNG" width="300"/>
 </div>
 
-<a name="Obelisks"></a>
+<br/><a name="Obelisks"></a>
 
 ## Obelisks
 
@@ -110,7 +110,7 @@ I use a similar setup to generate the tree on top of the obelisks, starting with
     <img src="../images/dicegarden-breakdown/obelisk_3.PNG" width="230"/>
 </div>
 
-<a name="Clouds"></a>
+<br/><a name="Clouds"></a>
 
 ## Clouds
 
@@ -125,7 +125,7 @@ Before exporting I also smooth the normals so that it looks softer in Unity. Thi
     <img src="../images/dicegarden-breakdown/clouds_final.PNG" width="300"/>
 </div>
 
-<a name="Plants"></a>
+<br/><a name="Plants"></a>
 
 ## Plants
 
@@ -153,7 +153,7 @@ I divide the *totalburn* of each point by the maximum of the simulation to have 
 
 I use this value in the shader to clip the pixels if it's below some threshold, and a smoothstep of the same value in the emission to get the white edge.
 
-<a name="HUD"></a>
+<br/><a name="HUD"></a>
 
 ## HUD
 
@@ -161,7 +161,7 @@ The HUD uses an additional camera with a replacement shader ( we're using Legacy
 
 <img src="../images/dicegarden-breakdown/hud.PNG" width="400"/>
 
-<a name="Dice"></a>
+<br/><a name="Dice"></a>
 
 ## Dice
 
