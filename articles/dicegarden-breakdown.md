@@ -11,35 +11,35 @@ last_update: 2022-06-25
 
 ## Introduction
 
-Here's a little breakdown of our HoudiniGameJam2022 game [Dice Garden](https://borderline.itch.io/dice-garden) that [I](https://twitter.com/tomdns_) made with [Constantin Liétard](https://twitter.com/screenshakes).
+Here's a little breakdown of our *HoudiniGameJam2022* game [Dice Garden](https://borderline.itch.io/dice-garden) that I made with [Constantin Liétard](https://twitter.com/screenshakes).
 
 ## Table of contents
 
 Environment
 
-[🌋 Islands](#Islands)
+- [🌋 Islands](#Islands)
 
-[🌿 Grass](#Grass)
+- [🌿 Grass](#Grass)
 
-[🌌 Portals](#Portals)
+- [🌌 Portals](#Portals)
 
-[⬛ Obelisks](#Obelisks)
+- [⬛ Obelisks](#Obelisks)
 
 Visual Effects
 
-[⛅ Clouds](#Clouds)
+- [⛅ Clouds](#Clouds)
 
-[🌼 Plants](#Plants)
+- [🌼 Plants](#Plants)
+
+- [📡 HUD](#HUD)
 
 Dice
 
-[🎲 Dice](#Dice)
-
-## Environment
+- [🎲 Dice](#Dice)
 
 <a name="Islands"></a>
 
-### Islands
+## Islands
 
 The islands are generated using Heightfields, I start off by extruding a 2D shape and applying a bunch of noises on it to have the base shape. Geometry doesn't need to be clean, we just want interesting silhouettes here.
 
@@ -64,7 +64,7 @@ After generating the base island I also extract the top polygons (by grouping th
 
 <a name="Grass"></a>
 
-### Grass
+## Grass
 
 The grass is made using the same fur technique as in the game Shadow of the Colossus.
 
@@ -82,7 +82,7 @@ Seems like a lot of polygons but it's still way less that if we had polys for ea
 
 <a name="Portals"></a>
 
-### Portals
+## Portals
 
 Portals are made using a Labs tree generator. I added a few attributes to the leaves to add a bit of movement in the shader in Unity. It took a few tweaks to have it working on a circle, but the generator is pretty fun to use and works quite well.
 
@@ -94,7 +94,7 @@ Portals are made using a Labs tree generator. I added a few attributes to the le
 
 <a name="Obelisks"></a>
 
-### Obelisks
+## Obelisks
 
 I use a similar setup to generate the tree on top of the obelisks, starting with a spiral that I raycast against the model. To orient each point to look towards the obelisk :
 
@@ -110,11 +110,9 @@ I use a similar setup to generate the tree on top of the obelisks, starting with
     <img src="../images/dicegarden-breakdown/obelisk_3.png" width="230"/>
 </div>
 
-## Visual Effects
-
 <a name="Clouds"></a>
 
-### Clouds
+## Clouds
 
 Clouds were made using the *Cloud* node. I start with a primitive sphere, copy a bunch of randomly sized spheres to it, then convert it to a cloud and use the *Cloud Noise* SOP to give it a more interesting shape.
 
@@ -129,7 +127,7 @@ Before exporting I also smooth the normals so that it looks softer in Unity. Thi
 
 <a name="Plants"></a>
 
-### Plants
+## Plants
 
 Plants are generated from scattered points on a circle. I copy twisted lines with a special *pscale* attribute.
 The further they are from the center, the smaller they get.
@@ -154,6 +152,14 @@ I divide the *totalburn* of each point by the maximum of the simulation to have 
 </div>
 
 I use this value in the shader to clip the pixels if it's below some threshold, and a smoothstep of the same value in the emission to get the white edge.
+
+<a name="HUD"></a>
+
+## HUD
+
+The HUD uses an additional camera with a replacement shader ( we're using Legacy ). Every object within specific layers get drawn an extra time using a screenspace shader, blended on top of the existing render.
+
+<img src="../images/dicegarden-breakdown/hud.png" width="400"/>
 
 <a name="Dice"></a>
 
