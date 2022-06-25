@@ -22,12 +22,25 @@
   </head>
   <body>
     <main id="content" class="main-content" role="main">
-        
+
+        <div class="header">
+            <div style="vertical-align: middle;">
+                <div>
+                    <a href="../index.html" id="header_title">TD</a>
+                </div>
+            </div>
+            <div class="category_container">
+                <a href="../index.html" class="category_item" id="work">Work</a>
+                <a href="../blog.html" class="category_item category_item_selected" id="blog">Blog 📝</a>
+            </div>
+        </div>
+         
+        <br>
         <h1>{{page.title}}</h1>
 
         <div class="banner_date">
-            <div>📆 Published {{ page.date | timeago }}</div>
-            <div>✏️ Last updated {{ page.last_update | timeago }}</div>
+            <!-- <div>📆 Published {{ page.date | timeago }}</div> -->
+            <div>📆 Last updated {{ page.last_update | timeago }}</div>
         </div>
 
         <div class="banner">

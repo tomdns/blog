@@ -6,4 +6,5 @@ layout: home
 document.getElementById("about").classList.add("category_item_selected");
 </script>
 
-Technical artist from Belgium, currently working at Mistplay in Montreal.
+## Hi!
+My name is Thomas Denis. I'm a technical artist from Belgium, currently working in Montreal.

@@ -11,7 +11,8 @@ last_update: 2022-02-05
 
 ## Introduction
 
-Here's a small breakdown of a shader I showed on [twitter](https://twitter.com/tomdns_/status/1177389679815135233). The goal was to have multiple points of impact in the shader itself, and to be able to work on any mesh that already had UVs.
+Here's a small breakdown of a shader I showed on [twitter](https://twitter.com/tomdns_/status/1177389679815135233). The goal was to have multiple impacts showing at the same time, and to be able to work on any mesh with UVs.
+
 Note that it was made in Unity but the shader logic can apply anywhere, only the hit detection part will be different.
 
 <div class="image_container">
@@ -41,7 +42,7 @@ Note that the array on the C# side and in the shader need to be initialized with
 
 ## Rings
 
-To make multiple rings in the shader, I loop through each hit in *_Hits* and do as follows:
+To make multiple rings in the shader, I loop through each position in *_Hits* and do as follows:
 
 + Take the distance between the hit position and the vertex position
 

@@ -3,6 +3,10 @@ layout: home
 ---
 
 <script>
+document.getElementById("blog").classList.add("category_item_selected");
+</script>
+
+<script>
 
 var tags = 
 {
@@ -138,13 +142,15 @@ function ToggleTag(el, tag) {
         <div class="card_child">
             <div>
                 <a href="{{item.url}}" class="card_header">{{item.title}}</a>
-                {% for tag in item.tags %}
-                    <span class="tag_article">{{tag}}</span>  
-                {% endfor %}
             </div>  
-            <div class="card_date">
-                🗓 {{ item.last_update | item.date | timeago }}
+            <div>
+            {% for tag in item.tags %}
+                <span class="tag_article">{{tag}}</span>  
+            {% endfor %}
             </div>
+            <!-- <div class="card_date">
+                 Last updated {{ item.last_update }}
+            </div> -->
         </div>
         <div class="card_preview">
             <img src="{{item.thumbnail}}" alt="image" />
